@@ -1,0 +1,33 @@
+#portal-top {
+  z-index: 1;
+  }
+#livesearchLegend {
+  margin-left:-7px;
+  }
+.photoAlbumEntry a:hover .photoAlbumEntryTitle  {
+  background-color:rgb(241,241,241);
+  cursor:pointer;
+  }
+/* Adding required bullet */
+.fieldRequired {
+  z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<span class="required-bullet">■ </span>'));
+  }
+.required-bullet {
+  color:#f00;
+  }
+/* Removing horizontal scroll */
+.pb-ajax {
+  overflow-x:hidden;
+  }
+.collapsible .collapser.collapsed {
+  z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterEnd', '&#9658;'));
+  }
+.collapsible .collapser.expanded {
+  z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '&#9660;'));
+  }
+#portal-personaltools-wrapper {
+  display: inline;
+  }
+#theme-globalnav {
+  border-top: 7px solid rgb(0, 161, 154);
+  }
