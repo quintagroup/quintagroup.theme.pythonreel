@@ -173,13 +173,21 @@ h1 div.formControls input {
 /*----- Edit Bar -----*/
 #edit-bar {
   background-color:#75ad0a;
-  min-height:1.73em;
+  // min-height:1.73em;
   margin:0 0 1em;
   padding:3px;
   }
+#edit-bar:after {
+  clear: both;
+  content: "";
+  display: block;
+  visibility: hidden;
+}
 #content-views {
-  background-color:#75ad0a;
-  float:left;
+  background-color: #75ad0a;
+  float: left;
+  margin: 0;
+  padding: 0;
   }
 #content-views li {
   display:inline;
