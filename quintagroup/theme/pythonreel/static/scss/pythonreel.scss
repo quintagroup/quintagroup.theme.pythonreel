@@ -6,12 +6,27 @@
 
 @import "parts/normalize";
 @import "parts/grid";
+@import "parts/general";
 @import "parts/main";
+@import "parts/forms";
+@import "parts/viewlets";
+@import "parts/portlets";
 @import "parts/plone";
 
 }
 
-@media screen and (max-width : 5in) {
+ /*----- Smaller than standard 960 (devices and browsers) -----*/
+@media only screen and (max-width: 959px) {
+
+}
+
+/*----- Tablet Portrait size to standard 960 (devices and browsers) -----*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/*----- All Mobile Sizes (devices and browser) -----*/
+@media only screen and (max-width: 767px) {
 
 @import "parts/mobile";
 

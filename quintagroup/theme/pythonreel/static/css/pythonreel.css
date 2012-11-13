@@ -784,11 +784,8 @@
   }
 
   /* ==========================================================================
-       Theme main styles
+       General Styles
        ========================================================================== */
-  /*
-   * General Styles
-   */
   body {
     background-color: #fff;
     color: #393939;
@@ -802,23 +799,32 @@
   }
 
   a:visited {
+    color: #97a9a8;
+  }
+
+  a:hover {
     color: #ff8a00;
   }
 
   h1 {
     font-family: yorkvilleregular,sans-serif;
-    font-size: 2.31em;
+    font-size: 2.32em;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 1.55em;
     font-weight: normal;
   }
 
-  ol {
-    list-style-type: decimal;
-    margin: 0 0 18px 27px;
+  h3 {
+    font-size: 1.16em;
+    font-weight: normal;
   }
 
-  #content ul {
-    list-style-type: disc;
-    margin: 6px 0 1em 22px;
+  p {
+    line-height: 1.4;
   }
 
   img {
@@ -839,18 +845,6 @@
     margin-bottom: 0;
   }
 
-  dl {
-    margin: 0 0 1em;
-  }
-
-  dd {
-    margin: 0 0 0.5em 27px;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
   pre {
     background-color: #222;
     color: #fff;
@@ -861,11 +855,17 @@
     overflow-x: auto;
   }
 
-  body#content {
-    margin: 1em;
+  /* ==========================================================================
+       Theme styles
+       ========================================================================== */
+  /*----- Plone Elements -----*/
+  .documentDescription {
+    color: #00a19a;
+    font-size: 1.32em;
+    line-height: 1.4;
+    margin: 0 0 1em;
   }
 
-  /*----- Plone Elements -----*/
   .discreet {
     color: #666;
     font-size: 85%;
@@ -1012,8 +1012,73 @@
     width: 960px;
   }
 
-  /*----- Viewlets -----*/
-  /*----- Portal Globalnav -----*/
+  #portal-column-one,
+  #portal-column-two {
+    margin-top: 1.55em;
+  }
+
+  /* ==========================================================================
+       Forms
+       ========================================================================== */
+  input {
+    font: 1em Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 3px;
+  }
+
+  .label {
+    font-weight: bold;
+  }
+
+  label {
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .field {
+    margin: 0 0 1em;
+  }
+
+  div.field.error {
+    background-color: #fdc;
+    border: 1px solid red;
+    margin: 1em 0;
+    padding: 0.5em;
+  }
+
+  .formControls {
+    margin: 1em 0;
+  }
+
+  .formControls input {
+    margin-right: 4px;
+  }
+
+  .context {
+    margin-right: 4px;
+    padding: 0 3px;
+  }
+
+  .standalone {
+    margin-right: 4px;
+    padding: 0 3px;
+  }
+
+  .destructive {
+    margin-right: 4px;
+    padding: 0 3px;
+  }
+
+  /* ==========================================================================
+       Viewlets
+       ========================================================================== */
+  /*
+   * Portal Globalnav
+   */
   #theme-globalnav {
     font-size: 1.31em;
     line-height: 1.18em;
@@ -1048,7 +1113,9 @@
     text-shadow: 0 0 2px rgba(29, 244, 211, 0.6);
   }
 
-  /*----- Portal Search Box -----*/
+  /*
+   * Portal Search Box 
+   */
   #portal-searchbox {
     clear: right;
     float: right;
@@ -1086,7 +1153,7 @@
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/../images/button-search.png?1351163007');
+    background-image: url('../images/button-search.png?1351163007');
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 14px;
@@ -1140,14 +1207,18 @@
     margin-left: 7px;
   }
 
-  /*----- Portal Logo -----*/
+  /*
+   * Portal Logo 
+   */
   #portal-logo {
     display: inline-block;
     margin: 0 75px 0 0;
     vertical-align: top;
   }
 
-  /*------ Slogan -----*/
+  /*
+   * Slogan 
+   */
   #slogan {
     color: #00a19a;
     display: inline-block;
@@ -1155,7 +1226,9 @@
     vertical-align: top;
   }
 
-  /*----- Bread Crumbs & Language Selecto -----*/
+  /*
+   * Bread Crumbs & Language Selecto 
+   */
   #portal-path {
     clear: both;
     margin: 0 auto 1.4em;
@@ -1193,7 +1266,9 @@
     color: #3b9d9a;
   }
 
-  /*----- Personal Tools -----*/
+  /*
+   * Personal Tools
+   */
   #portal-personaltools {
     font-size: 0.85em;
     line-height: 1.27em;
@@ -1230,7 +1305,9 @@
     background-color: transparent;
   }
 
-  /*----- Footer -----*/
+  /*
+   * Footer and Colophon
+   */
   #portal-footer {
     margin: auto;
     width: 960px;
@@ -1254,7 +1331,9 @@
     margin: 0 0 -2px;
   }
 
-  /*----- Portlets -----*/
+  /* ==========================================================================
+       Portlets
+       ========================================================================== */
   .portlet {
     margin: 0 0 10px;
   }
@@ -1267,11 +1346,15 @@
   }
 
   .portletItem {
+    font-size: 0.93em;
+    line-height: 1.33em;
     margin: 0;
+    padding: 1.1em 0 0.3em;
   }
 
   .portletFooter {
     margin: 0;
+    padding: 1.1em 0 0.3em;
   }
 
   .tile {
@@ -1279,10 +1362,13 @@
   }
 
   .portletItemDetails {
+    font-size: 0.83em;
     display: block;
   }
 
-  /*----- Manage Portlets -----*/
+  /*
+   * Manage Portlets
+   */
   .managePortletsLink {
     text-align: center;
   }
@@ -1300,21 +1386,34 @@
     margin: 0 2px;
   }
 
-  /*----- Portlet Navigation -----*/
+  /*
+   * Portlet Navigation
+   */
   .navTree {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .portletItem .navTreeItem a img {
-    display: none;
+  .portletNavigationTree a:visited {
+    color: #00a19a;
   }
 
-  /*----- Portlet News -----*/
-  /*----- Portlet Collection -----*/
-  /*----- Portlet Search -----*/
-  /*----- Portlet Static Text -----*/
+  .navTreeLevel0 > .navTreeItem > a {
+    font-size: 1.39em;
+  }
+
+  /*
+   * Portlet News
+   */
+  /*
+   * Portlet Collection -----*/
+  /*
+   * Portlet Search 
+   */
+  /*
+   * Portlet Static Text
+   */
   div.portletStaticText {
     margin: 0 0 10px;
   }
@@ -1328,7 +1427,9 @@
     margin: 6px 0 1em 19px;
   }
 
-  /*----- Portlet Calendar -----*/
+  /*
+   * Portlet Calendar
+   */
   .ploneCalendar {
     width: 100%;
   }
@@ -1407,6 +1508,10 @@
   }
 
   /*----- Editing -----*/
+  body#content {
+    margin: 1em;
+  }
+
   .fieldRequired {
     color: #fff;
   }
@@ -2457,14 +2562,13 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 5in) {
+/*----- Smaller than standard 960 (devices and browsers) -----*/
+/*----- Tablet Portrait size to standard 960 (devices and browsers) -----*/
+/*----- All Mobile Sizes (devices and browser) -----*/
+@media only screen and (max-width: 767px) {
   /* ==========================================================================
        Mobile styles
        ========================================================================== */
-  body {
-    font-size: 1.06em;
-  }
-
   div.row {
     float: none;
     width: auto;

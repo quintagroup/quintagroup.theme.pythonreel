@@ -14,6 +14,31 @@
             <xsl:value-of select="." />
         </div>
     </xsl:template>
+    <xsl:template css:match=".portletNavigationTree .navTreeLevel0 .navTree">
+      <xsl:choose>
+        <xsl:when test="not(node())">
+        </xsl:when>
+        <xsl:when test="node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()" />
+          </xsl:copy>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:template>
+    <xsl:template css:match="#portal-globalnav li:last-child">
+      <li>
+        <xsl:attribute name="class">last <xsl:value-of select="./@class" /></xsl:attribute>
+        <xsl:attribute name="id"><xsl:value-of select="./@id" /></xsl:attribute>
+        <xsl:apply-templates />
+      </li>
+    </xsl:template>
+    <xsl:template match="//*[contains(concat(' ', normalize-space(@class), ' '), ' portletNavigationTree ')]//a">
+        <a>
+            <xsl:attribute name="href"><xsl:value-of select="./@href" /></xsl:attribute>
+            <xsl:attribute name="title"><xsl:value-of select="./@title" /></xsl:attribute>
+            <xsl:apply-templates />
+        </a>
+    </xsl:template>
 
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">

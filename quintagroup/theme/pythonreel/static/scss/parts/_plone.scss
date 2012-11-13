@@ -58,6 +58,9 @@
   }
 
 /*----- Editing -----*/
+body#content {
+  margin: 1em;
+  }
 .fieldRequired {
   color:#fff;
   }
@@ -173,7 +176,6 @@ h1 div.formControls input {
 /*----- Edit Bar -----*/
 #edit-bar {
   background-color:#75ad0a;
-  // min-height:1.73em;
   margin:0 0 1em;
   padding:3px;
   }
