@@ -89,8 +89,10 @@ body#content {
   display:none;
   }
 .formHelp {
-  color:#555;
-  margin:0 0 0.2em 0;
+  color: #555;
+  display: block;
+  font-weight: normal;
+  margin: 0 0 0.2em 0;
   }
 .documentByLine {
   color: #76797c;
@@ -842,37 +844,37 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
   
 /*---------- CONTENT TYPE ICONS ----------*/
 .icons-on .contenttype-folder {
-  background:url(../images/icons-sprite.png) no-repeat 0 -1598px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -1600px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-document {
-  background:url(../images/icons-sprite.png) no-repeat 0 -1799px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -1801px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-news-item {
-  background:url(../images/icons-sprite.png) no-repeat 0 -1999px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -2001px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-event {
-  background:url(../images/icons-sprite.png) no-repeat 0 -2199px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -2201px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-topic {
-  background:url(../images/icons-sprite.png) no-repeat 0 -2400px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -2402px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-image {
-  background:url(../images/icons-sprite.png) no-repeat 0 -2599px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -2601px;
   display:inline-block;
   padding-left:19px;
   }
 .icons-on .contenttype-link {
-  background:url(../images/icons-sprite.png) no-repeat 0 -2995px;
+  background:url(../images/icons-sprite.png) no-repeat 0 -2997px;
   display:inline-block;
   padding-left:19px;
   }

@@ -25,6 +25,9 @@
 .collapsible .collapser.expanded {
   z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '&#9660;'));
   }
+.searchButton[type="submit"] {
+  padding-top: 25px;
+  }
 #portal-personaltools-wrapper {
   display: inline;
   }
@@ -37,3 +40,4 @@
 #portal-colophon {
   border-bottom: 5px solid rgb(0, 161, 154);
   }
+  

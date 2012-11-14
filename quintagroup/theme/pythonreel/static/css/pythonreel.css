@@ -82,14 +82,9 @@
    * Addresses `font-family` inconsistency between `textarea` and other form
    * elements.
    */
-  html,
-  button,
-  input,
-  select,
-  textarea {
-    font-family: sans-serif;
-  }
-
+  /*
+   * Addresses margins handled incorrectly in IE 6/7.
+   */
   /* ==========================================================================
      Links
      ========================================================================== */
@@ -249,19 +244,9 @@
     margin: 1em 0;
   }
 
-  dd {
-    margin: 0 0 0 27px;
-  }
-
   /*
    * Addresses paddings set differently in IE 6/7.
    */
-  menu,
-  ol,
-  ul {
-    padding: 0 0 0 27px;
-  }
-
   /*
    * Corrects list images handled incorrectly in IE 7.
    */
@@ -342,20 +327,6 @@
    *    and Chrome.
    * 3. Improves appearance and consistency in all browsers.
    */
-  button,
-  input,
-  select,
-  textarea {
-    font-size: 100%;
-    /* 1 */
-    margin: 0;
-    /* 2 */
-    vertical-align: baseline;
-    /* 3 */
-    *vertical-align: middle;
-    /* 3 */
-  }
-
   /*
    * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
    * the UA stylesheet.
@@ -806,10 +777,20 @@
     /*fix to IE8*/
   }
 
+  menu,
+  ol,
+  ul {
+    padding: 0 0 0 27px;
+  }
+
   li ul,
   li ol {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  dd {
+    margin: 0 0 0 27px;
   }
 
   pre {
@@ -948,9 +929,14 @@
   /* ==========================================================================
        Forms
        ========================================================================== */
-  input {
-    font: 1em Arial, Helvetica, sans-serif;
-    vertical-align: middle;
+  button,
+  input,
+  select,
+  textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    vertical-align: baseline;
   }
 
   input[type="checkbox"],
@@ -958,13 +944,9 @@
     margin-right: 3px;
   }
 
-  .label {
-    font-weight: bold;
-  }
-
+  .label,
   label {
     font-weight: bold;
-    vertical-align: middle;
   }
 
   .field {
@@ -974,7 +956,6 @@
   div.field.error {
     background-color: #fdc;
     border: 1px solid red;
-    margin: 1em 0;
     padding: 0.5em;
   }
 
@@ -986,19 +967,10 @@
     margin-right: 4px;
   }
 
-  .context {
-    margin-right: 4px;
-    padding: 0 3px;
-  }
-
-  .standalone {
-    margin-right: 4px;
-    padding: 0 3px;
-  }
-
+  .context,
+  .standalone,
   .destructive {
     margin-right: 4px;
-    padding: 0 3px;
   }
 
   /* ==========================================================================
@@ -1056,7 +1028,7 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 19px;
     box-shadow: -1px -1px rgba(4, 129, 98, 0.25);
-    padding: 2px 10px 3px;
+    padding: 0 0 0 10px;
   }
 
   #portal-searchbox .searchField {
@@ -1077,17 +1049,14 @@
   }
 
   .searchButton[type="submit"] {
-    background-color: transparent;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAM1BMVEUAoZoAoZoAoZoAoZoAoZoAoZoAoZoAoZoAoZoAn5gAoZoAoZoAoZoAoZoAoZoAnZYAAAApaNnIAAAAEXRSTlNDOGQte0+RFp2rWiKGcAu4AKQZVyQAAAB4SURBVHjaxdLNDsQgCEZR2+lYf5DL+z/tmJAuSuO2w8aYE4F8MdmqXpdWoO76lANEKlmjNPJppgcjSmHCpILeRRG/7nzu0q8uLYpR/BR6kOGPEmJBzoqkbUCPYj0zq8at3VrbTBiL3DQ7RfGB30XWfSl2xfP/f/ADH/olQ0jObf8AAAAASUVORK5CYII=);
     border: 0;
-    padding: 15px 0 0;
+    height: 25px;
+    padding: 0;
+    width: 25px;
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/../images/button-search.png?1351163007');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 14px;
-    height: 15px;
   }
 
   .LSResult {
@@ -1096,22 +1065,20 @@
   }
 
   .livesearchContainer {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     border: 1px solid #048162;
     border: 1px solid rgba(4, 129, 98, 0.25);
     border-radius: 0 19px 19px 19px;
-    left: -10px;
-    margin: 2em 0 0;
+    margin: 0;
     padding: 0;
     position: absolute;
-    top: 1px;
-    width: 224px;
+    right: 0;
+    top: 0;
+    width: 325px;
   }
 
   #livesearchLegend {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     border-color: #048162;
     border-color: rgba(4, 129, 98, 0.25);
     border-radius: 19px 19px 0 0;
@@ -1244,10 +1211,10 @@
     display: block;
     height: 14px;
     margin: auto;
-    overflow: hidden;
-    text-indent: 100%;
     width: 20px;
-    white-space: nowrap;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
   }
 
   #portal-footer-wrapper {
@@ -1498,6 +1465,8 @@
 
   .formHelp {
     color: #555;
+    display: block;
+    font-weight: normal;
     margin: 0 0 0.2em 0;
   }
 
@@ -2394,43 +2363,43 @@
 
   /*---------- CONTENT TYPE ICONS ----------*/
   .icons-on .contenttype-folder {
-    background: url(../images/icons-sprite.png) no-repeat 0 -1598px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -1600px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-document {
-    background: url(../images/icons-sprite.png) no-repeat 0 -1799px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -1801px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-news-item {
-    background: url(../images/icons-sprite.png) no-repeat 0 -1999px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2001px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-event {
-    background: url(../images/icons-sprite.png) no-repeat 0 -2199px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2201px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-topic {
-    background: url(../images/icons-sprite.png) no-repeat 0 -2400px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2402px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-image {
-    background: url(../images/icons-sprite.png) no-repeat 0 -2599px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2601px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-link {
-    background: url(../images/icons-sprite.png) no-repeat 0 -2995px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2997px;
     display: inline-block;
     padding-left: 19px;
   }

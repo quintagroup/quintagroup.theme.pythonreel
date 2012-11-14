@@ -47,7 +47,7 @@
   background-color: rgba(255,255,255,0.4);
   border-radius: 19px;
   box-shadow: -1px -1px rgba(4,129,98,0.25);
-  padding: 2px 10px 3px;
+  padding: 0 0 0 10px;
   }
 #portal-searchbox .searchField {
   background-color: transparent;
@@ -64,31 +64,31 @@
   color: #3fb7b2;
   }
 .searchButton[type="submit"] {
-  background-color: transparent;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAM1BMVEUAoZoAoZoAoZoAoZoAoZoAoZoAoZoAoZoAoZoAn5gAoZoAoZoAoZoAoZoAoZoAnZYAAAApaNnIAAAAEXRSTlNDOGQte0+RFp2rWiKGcAu4AKQZVyQAAAB4SURBVHjaxdLNDsQgCEZR2+lYf5DL+z/tmJAuSuO2w8aYE4F8MdmqXpdWoO76lANEKlmjNPJppgcjSmHCpILeRRG/7nzu0q8uLYpR/BR6kOGPEmJBzoqkbUCPYj0zq8at3VrbTBiL3DQ7RfGB30XWfSl2xfP/f/ADH/olQ0jObf8AAAAASUVORK5CYII=);
   border: 0;
-  padding: 15px 0 0;
-  @include replace-text-with-dimensions("../images/button-search.png", 0, 0);
+  height: 25px;
+  padding: 0;
+  width: 25px;
+  @include hide-text;
   }
 .LSResult {
-  position:relative;
-  z-index:3;
+  position: relative;
+  z-index: 3;
   }
 .livesearchContainer {
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
   border: 1px solid rgb(4, 129, 98);
   border: 1px solid rgba(4, 129, 98, 0.25);
   border-radius: 0 19px 19px 19px;
-  left: -10px;
-  margin: 2em 0 0;
+  margin: 0;
   padding: 0;
-  position: absolute;
-  top: 1px;
-  width: 224px;
+  position: absolute;  
+  right: 0;
+  top: 0;
+  width: 325px;
   }
 #livesearchLegend {
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
   border-color: rgb(4, 129, 98);
   border-color: rgba(4, 129, 98, 0.25);
   border-radius: 19px 19px 0 0;
@@ -202,15 +202,13 @@
  * Footer and Colophon
  */
 #go-top {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;  
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;
   clear: both;
   display: block;
   height: 14px;
   margin: auto;
-  overflow: hidden;
-  text-indent: 100%;
   width: 20px;
-  white-space: nowrap;
+  @include hide-text;
   }
 #portal-footer-wrapper {
   color: $mainColor;

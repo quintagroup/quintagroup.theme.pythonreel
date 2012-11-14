@@ -48,10 +48,18 @@ img {
   max-width: 100%;
   width: auto; /*fix to IE8*/
   }
+menu,
+ol,
+ul {
+  padding: 0 0 0 27px;
+  }
 li ul,
 li ol {
   margin-top: 0;
   margin-bottom: 0;
+  }
+dd {
+  margin: 0 0 0 27px;
   }
 pre {
   background-color: #222;

@@ -76,14 +76,21 @@ html {
  * elements.
  */
 
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
+// html,
+// button,
+// input,
+// select,
+// textarea {
+//     font-family: sans-serif;
+// }
 
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+// body {
+//     margin: 0;
+// }
 
 /* ==========================================================================
    Links
@@ -115,6 +122,21 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
+
+// h1 {
+//     font-size: 2em;
+//     margin: 0.67em 0;
+// }
+
+// h2 {
+//     font-size: 1.5em;
+//     margin: 0.83em 0;
+// }
+
+// h3 {
+//     font-size: 1.17em;
+//     margin: 1em 0;
+// }
 
 h4 {
     font-size: 1em;
@@ -262,19 +284,19 @@ ul {
     margin: 1em 0;
 }
 
-dd {
-    margin: 0 0 0 27px;
-}
+// dd {
+//     margin: 0 0 0 40px;
+// }
 
 /*
  * Addresses paddings set differently in IE 6/7.
  */
 
-menu,
-ol,
-ul {
-    padding: 0 0 0 27px;
-}
+// menu,
+// ol,
+// ul {
+//     padding: 0 0 0 40px;
+// }
 
 /*
  * Corrects list images handled incorrectly in IE 7.
@@ -362,15 +384,15 @@ legend {
  * 3. Improves appearance and consistency in all browsers.
  */
 
-button,
-input,
-select,
-textarea {
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
-    vertical-align: baseline; /* 3 */
-    *vertical-align: middle; /* 3 */
-}
+// button,
+// input,
+// select,
+// textarea {
+//     font-size: 100%; /* 1 */
+//     margin: 0; /* 2 */
+//     vertical-align: baseline; /* 3 */
+//     *vertical-align: middle; /* 3 */
+// }
 
 /*
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
