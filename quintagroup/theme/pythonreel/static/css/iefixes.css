@@ -29,8 +29,11 @@
   display: inline;
   }
 #theme-globalnav {
-  border-top: 7px solid rgb(0, 161, 154);
+  border-top: 5px solid rgb(0, 161, 154);
   }
 #portal-column-content {
   padding: 0 !important;
+  }
+#portal-colophon {
+  border-bottom: 5px solid rgb(0, 161, 154);
   }

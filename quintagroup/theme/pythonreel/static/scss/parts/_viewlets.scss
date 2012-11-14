@@ -12,21 +12,22 @@
   text-transform: lowercase;
   }
 #theme-globalnav:before {
-  border-color: rgb(0, 161, 154);
-  border-color: rgba(0, 161, 154, 0.75);
+  border: 7px solid rgb(0, 161, 154);
+  border: 7px solid rgba(0, 161, 154, 0.75);
   border-radius: 0 0 7px 7px;
-  border-style: solid;
-  border-width: 0 7px 7px;
   box-shadow: 0 1px rgba(0, 161, 154, 0.9);
   content: "";
   display: block;
-  margin: -2px 0 0;
+  margin: -9px 0 0;
   }
 #theme-globalnav li {
   display:inline;
   }
 #theme-globalnav a {
   margin-right: 70px;
+  }
+#theme-globalnav a:visited {
+  color: $mainColor;
   }
 #theme-globalnav .selected a,
 #theme-globalnav a:hover {
@@ -123,7 +124,7 @@
  * Slogan 
  */
 #slogan {
-  color: #00a19a;
+  color: $mainColor;
   display: inline-block;
   font: 2.23em/1em yorkvilleregular,sans-serif;
   vertical-align: top;
@@ -170,10 +171,10 @@
   font-size: 0.85em;
   line-height: 1.27em;
   list-style: none;
-  padding: 5px 0 0;
+  padding: 12px 0 0;
   }
 #portal-personaltools dt a {
-  color: #00a19a;
+  color: $mainColor;
   font-weight: normal;
   margin: 0;
   padding: 5px 11px;
@@ -189,7 +190,7 @@
   display: block;
   }
 #portal-personaltools li a {
-  color: #00a19a;
+  color: $mainColor;
   margin: 0;
   padding: 2px 7px;
   }
@@ -200,8 +201,23 @@
 /*
  * Footer and Colophon
  */
+#go-top {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;  
+  clear: both;
+  display: block;
+  height: 14px;
+  margin: auto;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 20px;
+  white-space: nowrap;
+  }
+#portal-footer-wrapper {
+  color: $mainColor;
+  font-size: 0.77em;
+  }
 #portal-footer {
-margin: auto;
+  margin: auto;
   width: 960px;
   }
 #portal-colophon {
@@ -210,14 +226,15 @@ margin: auto;
   width: 960px;
   }
 #portal-colophon:after {
-  border-color: rgb(0, 161, 154);
-  border-color: rgba(0, 161, 154, 0.75);
+  border: 7px solid rgb(0, 161, 154);
+  border: 7px solid rgba(0, 161, 154, 0.75);
   border-radius: 7px 7px 0 0;
-  border-style: solid;
-  border-width: 7px 7px 0;
-  box-shadow: 0 1px rgba(0, 161, 154, 0.9);
+  box-shadow: 0 -1px rgba(0, 161, 154, 0.9);
   content: "";
   display: block;
-  margin: 0 0 -2px;
+  margin: 0 0 -9px;
+  }
+#portal-footer-wrapper p {
+  margin: 0;
   }
   

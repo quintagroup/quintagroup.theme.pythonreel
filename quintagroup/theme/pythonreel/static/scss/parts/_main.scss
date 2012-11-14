@@ -4,7 +4,7 @@
   
 /*----- Plone Elements -----*/
 .documentDescription {
-  color: #00a19a;
+  color: $mainColor;
   font-size: 1.32em;
   line-height: 1.4;
   margin: 0 0 1em;
@@ -90,6 +90,9 @@ img.tileImage {
 #portal-columns-wrapper {
   margin: auto;
   width: 960px;
+  }
+#portal-columns {
+  margin: 0 0 1.5em;
   }
 #portal-column-content {
   -webkit-box-sizing: border-box;

@@ -925,6 +925,10 @@
     width: 960px;
   }
 
+  #portal-columns {
+    margin: 0 0 1.5em;
+  }
+
   #portal-column-content {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1012,15 +1016,13 @@
   }
 
   #theme-globalnav:before {
-    border-color: #00a19a;
-    border-color: rgba(0, 161, 154, 0.75);
+    border: 7px solid #00a19a;
+    border: 7px solid rgba(0, 161, 154, 0.75);
     border-radius: 0 0 7px 7px;
-    border-style: solid;
-    border-width: 0 7px 7px;
     box-shadow: 0 1px rgba(0, 161, 154, 0.9);
     content: "";
     display: block;
-    margin: -2px 0 0;
+    margin: -9px 0 0;
   }
 
   #theme-globalnav li {
@@ -1029,6 +1031,10 @@
 
   #theme-globalnav a {
     margin-right: 70px;
+  }
+
+  #theme-globalnav a:visited {
+    color: #00a19a;
   }
 
   #theme-globalnav .selected a,
@@ -1197,7 +1203,7 @@
     font-size: 0.85em;
     line-height: 1.27em;
     list-style: none;
-    padding: 5px 0 0;
+    padding: 12px 0 0;
   }
 
   #portal-personaltools dt a {
@@ -1232,6 +1238,23 @@
   /*
    * Footer and Colophon
    */
+  #go-top {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;
+    clear: both;
+    display: block;
+    height: 14px;
+    margin: auto;
+    overflow: hidden;
+    text-indent: 100%;
+    width: 20px;
+    white-space: nowrap;
+  }
+
+  #portal-footer-wrapper {
+    color: #00a19a;
+    font-size: 0.77em;
+  }
+
   #portal-footer {
     margin: auto;
     width: 960px;
@@ -1244,15 +1267,17 @@
   }
 
   #portal-colophon:after {
-    border-color: #00a19a;
-    border-color: rgba(0, 161, 154, 0.75);
+    border: 7px solid #00a19a;
+    border: 7px solid rgba(0, 161, 154, 0.75);
     border-radius: 7px 7px 0 0;
-    border-style: solid;
-    border-width: 7px 7px 0;
-    box-shadow: 0 1px rgba(0, 161, 154, 0.9);
+    box-shadow: 0 -1px rgba(0, 161, 154, 0.9);
     content: "";
     display: block;
-    margin: 0 0 -2px;
+    margin: 0 0 -9px;
+  }
+
+  #portal-footer-wrapper p {
+    margin: 0;
   }
 
   /* ==========================================================================
