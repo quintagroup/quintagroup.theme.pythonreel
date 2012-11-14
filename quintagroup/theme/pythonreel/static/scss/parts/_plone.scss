@@ -93,10 +93,17 @@ body#content {
   margin:0 0 0.2em 0;
   }
 .documentByLine {
-  color:#76797c;
-  font-size:85%;
-  font-weight:normal;
-  margin-bottom:0.5em;
+  color: #76797c;
+  font-size: 0.85em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  }
+.documentFirstHeading + #viewlet-below-content-title .documentByLine {
+  margin-top: -1.46em;
+  }
+.tileHeadline + .documentByLine {
+  display: block;
+  margin-top: -1.46em;
   }
 ul.configlets,
 #content ul.configlets {

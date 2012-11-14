@@ -7,6 +7,7 @@ body {
   color: #393939;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.81em;
+  margin: 0;
   }
 a {
   color: #00a19a;
@@ -23,38 +24,41 @@ h1 {
   font-size: 2.32em;
   font-weight: normal;
   line-height: 1;
+  margin: 0.67em 0;
   }
 h2 {
   font-size: 1.55em;
-  font-weight: normal;
+  font-weight: normal;  
+  margin: 0.83em 0;
   }
 h3 {
   font-size: 1.16em;;
   font-weight: normal;
+  margin: 1em 0;
   }
-p {
+p, ul, ol, dt, dd {
   line-height: 1.4;
   }
 img {
-  vertical-align:text-bottom;
+  vertical-align: text-bottom;
   }
 #content img,
 .portletStaticText img {
-  height:auto;
-  max-width:100%;
-  width:auto; /*fix to IE8*/
+  height: auto;
+  max-width: 100%;
+  width: auto; /*fix to IE8*/
   }
-#content li ul,
-#content li ol {
-  margin-top:0;
-  margin-bottom:0;
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
   }
 pre {
-  background-color:#222;
-  color:#fff;
-  font-size:12px;
-  font-family:monospace;
-  margin-bottom:1em;
-  padding:1em;
-  overflow-x:auto;
+  background-color: #222;
+  color: #fff;
+  font-size: 12px;
+  font-family: monospace;
+  margin-bottom: 1em;
+  padding: 1em;
+  overflow-x: auto;
   }

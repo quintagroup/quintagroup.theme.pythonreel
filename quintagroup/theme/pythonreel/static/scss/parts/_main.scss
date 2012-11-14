@@ -91,6 +91,15 @@ img.tileImage {
   margin: auto;
   width: 960px;
   }
+#portal-column-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 24px;
+  }
+#portal-column-content.position-1\3a 4 {
+  padding-left: 24px;  
+  }
 #portal-column-one,
 #portal-column-two {
   margin-top: 1.55em;

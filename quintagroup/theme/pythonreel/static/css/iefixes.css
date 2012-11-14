@@ -31,3 +31,6 @@
 #theme-globalnav {
   border-top: 7px solid rgb(0, 161, 154);
   }
+#portal-column-content {
+  padding: 0 !important;
+  }

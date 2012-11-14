@@ -84,13 +84,6 @@ textarea {
     font-family: sans-serif;
 }
 
-/*
- * Addresses margins handled incorrectly in IE 6/7.
- */
-
-body {
-    margin: 0;
-}
 
 /* ==========================================================================
    Links
@@ -122,21 +115,6 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
-}
-
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-}
 
 h4 {
     font-size: 1em;
@@ -285,7 +263,7 @@ ul {
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 27px;
 }
 
 /*
@@ -295,7 +273,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 27px;
 }
 
 /*

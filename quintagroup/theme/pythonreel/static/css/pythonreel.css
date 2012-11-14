@@ -90,13 +90,6 @@
     font-family: sans-serif;
   }
 
-  /*
-   * Addresses margins handled incorrectly in IE 6/7.
-   */
-  body {
-    margin: 0;
-  }
-
   /* ==========================================================================
      Links
      ========================================================================== */
@@ -123,21 +116,6 @@
    * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
    * and Chrome.
    */
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
-  }
-
-  h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-  }
-
   h4 {
     font-size: 1em;
     margin: 1.33em 0;
@@ -272,7 +250,7 @@
   }
 
   dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 27px;
   }
 
   /*
@@ -281,7 +259,7 @@
   menu,
   ol,
   ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 27px;
   }
 
   /*
@@ -491,97 +469,82 @@
   /* ==========================================================================
        Grid
        ========================================================================== */
-  /*----- Layout -----*/
-  .row {
-    float: left;
-    position: relative;
-    width: 100%;
-  }
-
-  .cell {
-    float: left;
-    left: 100%;
-    position: relative;
-  }
-
-  /*---------- Grid  ----------*/
-  /* WARN: You don't have int pixel values.*/
   /* The 16-column Deco Grid System for fixed width of 960px:
-   * Cells are 48.75px (5.078125%), margin will be 12px (1.25%).
+   * Cells are 45.0px (4.6875%), margin will be 16px (1.66666666667%).
    * Portal left/right margin is 0dpx (0.0%).
    */
   div.row {
-    display: block;
     float: left;
-    position: relative;
     width: 100%;
+    display: block;
+    position: relative;
   }
 
   div.cell {
+    position: relative;
     float: left;
     left: 100%;
-    position: relative;
   }
 
   /* Width classes */
   div.width-1 {
-    width: 5.0781%;
+    width: 4.6875%;
   }
 
   div.width-2 {
-    width: 11.4062%;
+    width: 11.0417%;
   }
 
   div.width-3 {
-    width: 17.7344%;
+    width: 17.3958%;
   }
 
   div.width-4 {
-    width: 24.0625%;
+    width: 23.7500%;
   }
 
   div.width-5 {
-    width: 30.3906%;
+    width: 30.1042%;
   }
 
   div.width-6 {
-    width: 36.7188%;
+    width: 36.4583%;
   }
 
   div.width-7 {
-    width: 43.0469%;
+    width: 42.8125%;
   }
 
   div.width-8 {
-    width: 49.3750%;
+    width: 49.1667%;
   }
 
   div.width-9 {
-    width: 55.7031%;
+    width: 55.5208%;
   }
 
   div.width-10 {
-    width: 62.0312%;
+    width: 61.8750%;
   }
 
   div.width-11 {
-    width: 68.3594%;
+    width: 68.2292%;
   }
 
   div.width-12 {
-    width: 74.6875%;
+    width: 74.5833%;
   }
 
   div.width-13 {
-    width: 81.0156%;
+    width: 80.9375%;
   }
 
   div.width-14 {
-    width: 87.3438%;
+    width: 87.2917%;
   }
 
   div.width-15 {
-    width: 93.6719%;
+    width: 93.6458%;
   }
 
   div.width-16 {
@@ -595,63 +558,63 @@
   }
 
   div.position-1 {
-    margin-left: -93.6719%;
+    margin-left: -93.6458%;
   }
 
   div.position-2 {
-    margin-left: -87.3438%;
+    margin-left: -87.2917%;
   }
 
   div.position-3 {
-    margin-left: -81.0156%;
+    margin-left: -80.9375%;
   }
 
   div.position-4 {
-    margin-left: -74.6875%;
+    margin-left: -74.5833%;
   }
 
   div.position-5 {
-    margin-left: -68.3594%;
+    margin-left: -68.2292%;
   }
 
   div.position-6 {
-    margin-left: -62.0312%;
+    margin-left: -61.875%;
   }
 
   div.position-7 {
-    margin-left: -55.7031%;
+    margin-left: -55.5208%;
   }
 
   div.position-8 {
-    margin-left: -49.375%;
+    margin-left: -49.1667%;
   }
 
   div.position-9 {
-    margin-left: -43.0469%;
+    margin-left: -42.8125%;
   }
 
   div.position-10 {
-    margin-left: -36.7187%;
+    margin-left: -36.4583%;
   }
 
   div.position-11 {
-    margin-left: -30.3906%;
+    margin-left: -30.1042%;
   }
 
   div.position-12 {
-    margin-left: -24.0625%;
+    margin-left: -23.75%;
   }
 
   div.position-13 {
-    margin-left: -17.7344%;
+    margin-left: -17.3958%;
   }
 
   div.position-14 {
-    margin-left: -11.4062%;
+    margin-left: -11.0417%;
   }
 
   div.position-15 {
-    margin-left: -5.0781%;
+    margin-left: -4.6875%;
   }
 
   /* Convenience classes. Not strictly necessary. */
@@ -664,123 +627,123 @@
   }
 
   div.width-1\3a 2 {
-    width: 49.3750%;
+    width: 49.1667%;
   }
 
   div.position-1\3a 2 {
-    margin-left: -49.375%;
+    margin-left: -49.1667%;
   }
 
   div.width-1\3a 3 {
-    width: 32.5000%;
+    width: 32.2222%;
   }
 
   div.width-2\3a 3 {
-    width: 66.2500%;
+    width: 66.1111%;
   }
 
   div.position-1\3a 3 {
-    margin-left: -66.25%;
+    margin-left: -66.1111%;
   }
 
   div.position-2\3a 3 {
-    margin-left: -32.5%;
+    margin-left: -32.2222%;
   }
 
   div.width-1\3a 4 {
-    width: 24.0625%;
+    width: 23.7500%;
   }
 
   div.width-2\3a 4 {
-    width: 49.3750%;
+    width: 49.1667%;
   }
 
   div.width-3\3a 4 {
-    width: 74.6875%;
+    width: 74.5833%;
   }
 
   div.position-1\3a 4 {
-    margin-left: -74.6875%;
+    margin-left: -74.5833%;
   }
 
   div.position-2\3a 4 {
-    margin-left: -49.375%;
+    margin-left: -49.1667%;
   }
 
   div.position-3\3a 4 {
-    margin-left: -24.0625%;
+    margin-left: -23.75%;
   }
 
   div.width-1\3a 5 {
-    width: 19.0000%;
+    width: 18.6667%;
   }
 
   div.width-2\3a 5 {
-    width: 39.2500%;
+    width: 39.0000%;
   }
 
   div.width-3\3a 5 {
-    width: 59.5000%;
+    width: 59.3333%;
   }
 
   div.width-4\3a 5 {
-    width: 79.7500%;
+    width: 79.6667%;
   }
 
   div.position-1\3a 5 {
-    margin-left: -79.75%;
+    margin-left: -79.6667%;
   }
 
   div.position-2\3a 5 {
-    margin-left: -59.5%;
+    margin-left: -59.3333%;
   }
 
   div.position-3\3a 5 {
-    margin-left: -39.25%;
+    margin-left: -39%;
   }
 
   div.position-4\3a 5 {
-    margin-left: -19%;
+    margin-left: -18.6667%;
   }
 
   div.width-1\3a 6 {
-    width: 15.6250%;
+    width: 15.2778%;
   }
 
   div.width-2\3a 6 {
-    width: 32.5000%;
+    width: 32.2222%;
   }
 
   div.width-3\3a 6 {
-    width: 49.3750%;
+    width: 49.1667%;
   }
 
   div.width-4\3a 6 {
-    width: 66.2500%;
+    width: 66.1111%;
   }
 
   div.width-5\3a 6 {
-    width: 83.1250%;
+    width: 83.0556%;
   }
 
   div.position-1\3a 6 {
-    margin-left: -83.125%;
+    margin-left: -83.0556%;
   }
 
   div.position-2\3a 6 {
-    margin-left: -66.25%;
+    margin-left: -66.1111%;
   }
 
   div.position-3\3a 6 {
-    margin-left: -49.375%;
+    margin-left: -49.1667%;
   }
 
   div.position-4\3a 6 {
-    margin-left: -32.5%;
+    margin-left: -32.2222%;
   }
 
   div.position-5\3a 6 {
-    margin-left: -15.625%;
+    margin-left: -15.2778%;
   }
 
   /* ==========================================================================
@@ -791,6 +754,7 @@
     color: #393939;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.81em;
+    margin: 0;
   }
 
   a {
@@ -811,19 +775,22 @@
     font-size: 2.32em;
     font-weight: normal;
     line-height: 1;
+    margin: 0.67em 0;
   }
 
   h2 {
     font-size: 1.55em;
     font-weight: normal;
+    margin: 0.83em 0;
   }
 
   h3 {
     font-size: 1.16em;
     font-weight: normal;
+    margin: 1em 0;
   }
 
-  p {
+  p, ul, ol, dt, dd {
     line-height: 1.4;
   }
 
@@ -839,8 +806,8 @@
     /*fix to IE8*/
   }
 
-  #content li ul,
-  #content li ol {
+  li ul,
+  li ol {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -940,60 +907,6 @@
     margin: 0 0 0.5em 0.5em;
   }
 
-  /*----- Forms -----*/
-  input {
-    font: 1em Arial, Helvetica, sans-serif;
-    vertical-align: middle;
-  }
-
-  input[type="checkbox"],
-  input[type="radio"] {
-    margin-right: 3px;
-  }
-
-  .label {
-    font-weight: bold;
-  }
-
-  label {
-    font-weight: bold;
-    vertical-align: middle;
-  }
-
-  .field {
-    margin: 0 0 1em;
-  }
-
-  div.field.error {
-    background-color: #fdc;
-    border: 1px solid red;
-    margin: 1em 0;
-    padding: 0.5em;
-  }
-
-  .formControls {
-    margin: 1em 0;
-  }
-
-  .formControls input {
-    margin-right: 4px;
-  }
-
-  .context {
-    margin-right: 4px;
-    padding: 0 3px;
-  }
-
-  .standalone {
-    margin-right: 4px;
-    padding: 0 3px;
-  }
-
-  .destructive {
-    margin-right: 4px;
-    padding: 0 3px;
-  }
-
   /*----- General -----*/
   #portal-top {
     background: url(../images/pat.png);
@@ -1010,6 +923,17 @@
   #portal-columns-wrapper {
     margin: auto;
     width: 960px;
+  }
+
+  #portal-column-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 24px;
+  }
+
+  #portal-column-content.position-1\3a 4 {
+    padding-left: 24px;
   }
 
   #portal-column-one,
@@ -1153,7 +1077,7 @@
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/button-search.png?1351163007');
+    background-image: url('../images/../images/button-search.png?1351163007');
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 14px;
@@ -1554,9 +1478,18 @@
 
   .documentByLine {
     color: #76797c;
-    font-size: 85%;
+    font-size: 0.85em;
     font-weight: normal;
     margin-bottom: 0.5em;
+  }
+
+  .documentFirstHeading + #viewlet-below-content-title .documentByLine {
+    margin-top: -1.46em;
+  }
+
+  .tileHeadline + .documentByLine {
+    display: block;
+    margin-top: -1.46em;
   }
 
   ul.configlets,
