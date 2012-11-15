@@ -46,6 +46,14 @@
 .visualClear {
   clear:both;
   }
+
+/*
+ * TinyMCE Styles
+ */
+.mceContentBody a {
+  border: 0 !important;
+  color: $mainColor !important;
+  }
   
 /* Image alignment classes */
 .image-left {

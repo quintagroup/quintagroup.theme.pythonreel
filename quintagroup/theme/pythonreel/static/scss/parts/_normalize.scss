@@ -317,10 +317,10 @@ nav ol {
  * 2. Improves image quality when scaled in IE 7.
  */
 
-img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
-}
+// img {
+//     border: 0; /* 1 */
+//     -ms-interpolation-mode: bicubic; /* 2 */
+// }
 
 /*
  * Corrects overflow displayed oddly in IE 9.

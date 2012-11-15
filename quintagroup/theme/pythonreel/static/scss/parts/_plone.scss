@@ -31,23 +31,23 @@
 #content .eventDetails h2 {
   background-color:#ddd;
   font-size:100%;
+  margin: 0;
   padding:0.5em 0.5em 0.5em 1em;
   }
 #content .eventDetails .eventDetail {
   clear:both;
   }
-#content .eventDetails .eventDetail h3,
-#content .eventDetails .eventDetail div {
-  padding:2%;
-  }
 #content .eventDetails .eventDetail h3 {
   float:left;
   font-size:100%;
+  margin: 0;
+  padding:2%;
   text-align:right;
   width:37%;
   }
 #content .eventDetails .eventDetail div {
   float:left;
+  padding:2%;
   width:55%;
   } 
 
@@ -330,7 +330,8 @@ div.field span.required:after {
   margin:0;
   }
 .portalMessage a {
-  color:#000;
+  border-bottom: 1px dotted;
+  color: #000;
   }
 .portalMessage dt {
   background-color:#996;
