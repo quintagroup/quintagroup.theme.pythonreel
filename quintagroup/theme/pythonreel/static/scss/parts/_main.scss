@@ -115,3 +115,19 @@ img.tileImage {
 #portal-column-two {
   margin-top: 1.55em;
   }
+
+/*
+ * Search Page
+ */
+#search-field {
+  border: 0;
+}
+.searchPage[type="text"] {
+  border: 1px solid #8cc8be;
+  border: 1px solid rgba(4, 129, 98, 0.25);
+  border-radius: 19px;
+  padding: 5px 10px;
+}
+.searchPage[type="text"]:focus {
+  outline: none;
+}

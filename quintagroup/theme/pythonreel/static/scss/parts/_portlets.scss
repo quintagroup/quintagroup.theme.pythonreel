@@ -96,6 +96,9 @@ dt.portletHeader {
 /*
  * Portlet Search 
  */
+.portletSearch .LSBox {
+  border-width: 1px;
+}
 .portletSearch .searchField {
   background-color: transparent;
   border: 0;

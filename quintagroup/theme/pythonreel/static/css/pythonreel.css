@@ -928,6 +928,24 @@
     margin-top: 1.55em;
   }
 
+  /*
+   * Search Page
+   */
+  #search-field {
+    border: 0;
+  }
+
+  .searchPage[type="text"] {
+    border: 1px solid #8cc8be;
+    border: 1px solid rgba(4, 129, 98, 0.25);
+    border-radius: 19px;
+    padding: 5px 10px;
+  }
+
+  .searchPage[type="text"]:focus {
+    outline: none;
+  }
+
   /* ==========================================================================
        Forms
        ========================================================================== */
@@ -1030,7 +1048,7 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-color: #8cc8be;
     border-color: rgba(4, 129, 98, 0.25);
-    border-radius: 19px 19px 19px 19px;
+    border-radius: 19px;
     border-style: solid;
     border-width: 1px 0 0 1px;
     padding: 0 0 0 10px;
@@ -1368,6 +1386,10 @@
   /*
    * Portlet Search 
    */
+  .portletSearch .LSBox {
+    border-width: 1px;
+  }
+
   .portletSearch .searchField {
     background-color: transparent;
     border: 0;
@@ -2468,13 +2490,13 @@
   }
 
   .icons-on .contenttype-document {
-    background: url(../images/icons-sprite.png) no-repeat 0 -1801px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -1800px;
     display: inline-block;
     padding-left: 19px;
   }
 
   .icons-on .contenttype-news-item {
-    background: url(../images/icons-sprite.png) no-repeat 0 -2001px;
+    background: url(../images/icons-sprite.png) no-repeat 0 -2000px;
     display: inline-block;
     padding-left: 19px;
   }
