@@ -105,7 +105,7 @@ dt.portletHeader {
   color: #3fb7b2;
   font-size: 1.08em;
   text-transform: lowercase;
-  width: 190px;
+  width: 188px;
   }
 .portletSearch .searchField:focus {
   outline: none;
@@ -127,6 +127,10 @@ div.portletStaticText {
 /*
  * Portlet Calendar
  */
+.portletCalendar dt.portletHeader {
+  font-size: 1.86em;
+  text-transform: uppercase;
+}
 .ploneCalendar {
   width: 100%;
   } 
@@ -163,6 +167,22 @@ div.portletStaticText {
   line-height: 1em;
   padding-top: 13px;
   }
+#calendar-previous {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAMAAAAcTszfAAAAMFBMVEUAoZoAoZoAoZoAoZoAlpAAoZoAoZoAoZoAl5EAoZoAmZIAoZoAAAAAmpMAmJEAoZp+2LSiAAAADXRSTlOQGH4M+HUGNulL22MAm+lOJwAAAC1JREFUeNodx8kRACAMw0BzBohJ+u8WD/rsCFQFYo4b4F6ZAU+ls/MhvQvV6gMr4wHNVz1NRQAAAABJRU5ErkJggg==) 50% 50% no-repeat;
+  display: inline-block;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+  @include hide-text;
+}
+#calendar-next {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAMAAAAcTszfAAAAMFBMVEUAoZoAoZoAoZoAoZoAlpAAoZoAoZoAoZoAl5EAoZoAmZIAoZoAAAAAmpMAmJEAoZp+2LSiAAAADXRSTlOQGH4M+HUGNulL22MAm+lOJwAAACxJREFUeNodikkSACAMwnCtWrX//61gLhkmIJdNcKt/RSyTiEtjcp3W2ZD0fCyLAc17G1hSAAAAAElFTkSuQmCC) 50% 50% no-repeat;
+  display: inline-block;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+  @include hide-text;
+}
 
 /*
  * Login Portlet
