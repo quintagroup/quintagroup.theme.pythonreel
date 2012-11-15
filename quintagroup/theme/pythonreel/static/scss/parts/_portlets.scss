@@ -128,7 +128,7 @@ div.portletStaticText {
  * Portlet Calendar
  */
 .portletCalendar dt.portletHeader {
-  font-size: 1.7em;
+  font-size: 1.65em;
   text-transform: uppercase;
 }
 .ploneCalendar {
@@ -164,6 +164,7 @@ div.portletStaticText {
 .ploneCalendar .todaynoevent {
   font-family: yorkvilleregular,sans-serif;
   font-size: 1.67em;
+  letter-spacing: 1px;
   line-height: 1em;
   padding-top: 13px;
   }
