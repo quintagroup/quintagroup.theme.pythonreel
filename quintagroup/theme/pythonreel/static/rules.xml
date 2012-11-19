@@ -8,6 +8,9 @@
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     <notheme if-path="@@manage-viewlets" />
+    
+    
+    
     <xsl:template css:match="#portal-colophon">
         <div id="portal-colophon">
             <p class="credits"><a href="http://skins.quintagroup.com">Plone Theme/Design</a> by <a href="http://quintagroup.com">Quintagroup</a> © 2005-2012</p>
@@ -61,6 +64,15 @@
         <after css:content="head link:not([href*='ploneCustom'])" theme="/html/head/title" />
         <after content="/html/head/style | /html/head/script" theme="/html/head/title" />
         <after css:content="head link[href*='ploneCustom']" theme-children="/html/head" />
+        <drop theme="descendant-or-self::style" if="($columnonewidth = 'default') or ($columntwowidth = 'default') or ($columnsmargin = 'default')" />
+        <after theme-children="/html/head/style" if="($columnonewidth != 'default') or ($columntwowidth != 'default') or ($columnsmargin != 'default')">
+            #portal-column-one {width:<xsl:value-of select="number($columnonewidth)" />%;}
+            #portal-column-two { margin-left:-<xsl:value-of select="number($columntwowidth)" />%;width:<xsl:value-of select="number($columntwowidth)" />%;}
+            #portal-column-content.width-1\3a 2 {width:<xsl:value-of select="100-number($columnonewidth)-number($columntwowidth)-number($columnsmargin)*2" />%;}
+            #portal-column-content.width-3\3a 4.position-1\3a 4 { width:<xsl:value-of select="100-number($columnonewidth)-number($columnsmargin)" />%;}
+            #portal-column-content.width-3\3a 4.position-0 {width:<xsl:value-of select="100-number($columntwowidth)-number($columnsmargin)" />%;}
+            #portal-column-content.position-1\3a 4 {margin-left:-<xsl:value-of select="100-number($columnonewidth)-number($columnsmargin)" />%;}
+        </after>
 
         <!--  Body -->
         <merge attributes="dir class" css:content="body" css:theme="body" />
