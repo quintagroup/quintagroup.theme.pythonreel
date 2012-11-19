@@ -25,6 +25,8 @@ setup(name='quintagroup.theme.pythonreel',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming',
+          'plone.app.themingplugins',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

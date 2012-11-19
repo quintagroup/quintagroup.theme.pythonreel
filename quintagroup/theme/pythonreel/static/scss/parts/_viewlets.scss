@@ -204,9 +204,13 @@
 /*
  * Footer and Colophon
  */
+#portal-bottom {
+  clear: both;
+  margin: auto;
+  width: 960px;
+}
 #go-top {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;
-  clear: both;
   display: block;
   height: 14px;
   margin: auto;
@@ -217,14 +221,8 @@
   color: $mainColor;
   font-size: 0.77em;
   }
-#portal-footer {
-  margin: auto;
-  width: 960px;
-  }
 #portal-colophon {
-  margin: auto;
   overflow: hidden;
-  width: 960px;
   }
 #portal-colophon:after {
   border: 7px solid rgb(0, 161, 154);
@@ -238,4 +236,36 @@
 #portal-footer-wrapper p {
   margin: 0;
   }
-  
+/*
+ * Social Links
+ */
+.slinks {
+  bottom: 6px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+.slinks li {
+  display: inline-block;
+}
+.slink {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAASCAMAAADhY0l2AAADAFBMVEVYWFhFRUU8PDxaWlpubm5xcXFPT096enpra2scHBwbGxscHBxdXV1UVFRHR0dwcHB+fn5jY2NiYmJzc3M1NTU8PDx5eXk0NDQkJCQqKiotLS1/f38tLS0xMTFycnJWVlY2NjY1NTV2dnZtbW0+Pj42NjZiYmJtbW1kZGRPT088PDxlZWU+Pj44ODguLi5FRUU7OztWVlZgYGBJSUl6enpZWVlnZ2d9fX1KSkojIyNSUlI2NjZoaGhlZWVKSkpERERXV1cwMDAvLy9CQkImJiaEhIRiYmJAQEBoaGhGRkZvb29XV1dFRUVQUFBjY2NgYGBzc3NHR0dZWVk7OztMTEwvLy9fX183NzdlZWVWVlZtbW1KSkpcXFxubm4rKytzc3NbW1tHR0d5eXlUVFRCQkItLS1KSkpmZmZaWlpYWFhGRkZqamo/Pz8mJiY5OTlDQ0NPT0+CgoIuLi5oaGhoaGgcHBxQUFBKSkpmZmZvb29tbW1vb280NDRxcXFNTU09PT0+Pj5oaGgoKCheXl5GRkY7OztHR0dFRUV2dnY+Pj5WVlZra2tubm4rKytvb29eXl5WVlZJSUlKSkpLS0uLi4tnZ2dLS0s2NjY+Pj4dHR1zc3NWVlY9PT1ra2tlZWV5eXlVVVVra2tGRkYkJCQ3NzdbW1tHR0dfX19KSkp0dHRbW1spKSk+Pj48PDxOTk5kZGRvb29LS0taWlpUVFRlZWVVVVVNTU0pKSlOTk5mZmYjIyNFRUU0NDQ/Pz9bW1toaGhMTEyBgYF0dHRhYWFLS0tMTExCQkI6OjpJSUkyMjJBQUFaWlp6enpERERISEhcXFxSUlJ9fX10dHSSkpJlZWVubm5oaGg9PT2AgIBAQEBXV1c0NDSBgYE8PDxubm4vLy+Dg4NQUFBMTEwsLCw5OTlaWlpGRkZVVVVzc3NSUlJlZWV+fn5UVFRkZGSGhoZgYGBXV1c3Nzc0NDSOjo5ra2t6enpoaGh2dnZVVVViYmJtbW1zc3NTU1NdXV06OjoAAADVhkfsAAABAHRSTlMtPTc/CCw2CRMjHSwYIiY2Njw2HkA/PEAaByYaLjMgKzYqJTMOQCw7MjcdHTU4MD8oMzcHOTA9PD0QMzg2JTMhCykkFTJAMCUaMyglLxQuPRwoFhk7HiMhPTk4QBoxQD4dPD0TPhsYBjo6MikzJz0GPSVAGCIEOSQ5Ki9ADREtIiwQCw8tGwkrOzkKGwMTPiEhLA4dQCEiIzAJOjsHChcXPjg5QC5ANDg1FTwlQDIxIA0RLS0/HikIPkAGGxUKED8yPkBAQD9AEkAECD4gDBlAPkAhQAcENwRAPBEFQBEhFEBAQAJAQEA/QEBAQEBAQEBADwNAQEBAQEBAQAICQAEACREf4AAAA5tJREFUeNqN1HdYE2ccB/BU62jr1tY+zlprq7VDWxfu1uKodSsK2LoFxQluEfcA9wIVtEzZFGUXhMoeAqKCSQBJQjZ35ELGJZe7/MypebgLfYLfP+6P33P3ed7n+77vcWBvI9hN0KYBsds/b4H2ciI2dlNRGgvjfPzJR2lgJ/+Gi8Xi/oNq28UvevYTfxp/VF3CwMPCwrab7XzzbaFUKo0Lbx9vEMdJi/PzJ52tb8X/8vT8wV4xZ0VCRcKS0/9TS8nFBuZUHR+1y4BhBsXyGTut+OAR32fZW7kPJnHns4u6DXTMc3i+asa4sbR8w9qFvY0UJjz16B1eq34EdmJOooyR2eyd++1XGt2sEBbMKwJ23I575KCVyP3yt/iyiopr5mvXr1eUeh8dE9AA7MxKiEH1yT+N3V/LWOIv4tDUmeRsFKUMUa0r8+7RvdtdgOpoFyWFTC99g29Mf3qFvFJWtiVpVEHxj7wANp5pyNMTWlSSymx3pRRRTT14B5cTKOZfm/au1KIC2aKQg4kAicMzKORqC43nGyqdyJt6fYaRkmCIiJfFwisCk4nDRHKZP3NbyierCLxJ4FinI1SKW/VgxTFUK//siQnuDldSikwaF1LoTdMrea78ksc/fShMdIyF/8wfSRz+ZjT/DHPY8jAH5zZrNDfq8IzgP6z4Vwnuqwhcx919AY64KCP2nbHgMqP2lemZrqrqSzN0XUUhW20O3dda7YGTwM7JQ7pmzfPnGkdcP58Ea0g/r0NrdFzBbhP01Rqx/TSuJJ6ZnjTVPY4GqA5Bsf9esqGHSv0BPuP07KWfRya+wQV4jR/77fPnLNJAqP5TT3UOsuJcweO/AdxclJI2uCovkok7NJSSbl7jHG9oNM1Vl1azji0JEL2+idurCyzOUQVvbuTIUMJSSxOXxl+EoG3wJEmE8wPmFVpxy2f8hFzLfgqq7pxnvlmfOvQewBBcp1sMH4aoDEuCOLI8Pd25bj2N16ja1OKDIPuYOLScvo+otHIcP/f7cdbd+s4VicmGFz1z5Z2qYaHlDqg56ZVvT8uaexY8MkK41QY/lS8KrWePgh6kOE3bMzfxAvvHFScVGtaCeY+WqJkJTh2Focs4xUjlZfqc59C4s8J1WwlbOlZY6GuD0+2SpO3Me0pcsWgDwNI84yI+rJaJeCs5vEnpKWRKWYz7UoCdUes2htvgw3bs+MIB3iPmrPhtmSRAdmBw4AJYsPyDDiteA/vxjLXWZ7m3AAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  width: 20px;
+  @include hide-text;
+}
+.linked-in-link {
+  background-position: 0 0;
+}
+.facebook-link {
+  background-position: -25px 0;
+}
+.twitter-link {
+  background-position: -47px 0;
+}
+.rss-link {
+  background-position: -72px 0;
+}
