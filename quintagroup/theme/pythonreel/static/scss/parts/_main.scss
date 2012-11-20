@@ -90,11 +90,14 @@ img.tileImage {
   border-bottom: 1px solid #5ec3bf;
   box-shadow: 0 5px 24px rgba(0, 106, 107, 0.21);
   }
-#portal-header {
+#portal-header-wrapper {  
+  color: $mainColor;
   margin: auto;
-  padding: 0 0 33px;
   width: 960px;
   }
+#portal-header {
+  padding: 0 0 33px;  
+}
 #portal-columns-wrapper {
   margin: auto;
   width: 960px;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
      Fonts
      ========================================================================== */
@@ -295,7 +296,7 @@
    */
   fieldset {
     border: 1px solid #c0c0c0;
-    margin: 0 2px;
+    margin: 1em 0;
     padding: 0.35em 0.625em 0.75em;
   }
 
@@ -897,10 +898,14 @@
     box-shadow: 0 5px 24px rgba(0, 106, 107, 0.21);
   }
 
-  #portal-header {
+  #portal-header-wrapper {
+    color: #00a19a;
     margin: auto;
-    padding: 0 0 33px;
     width: 960px;
+  }
+
+  #portal-header {
+    padding: 0 0 33px;
   }
 
   #portal-columns-wrapper {
@@ -1245,12 +1250,16 @@
     text-align: left;
   }
 
-  #portal-footer-wrapper {
+  #portal-footer {
     color: #00a19a;
     font-size: 0.77em;
+    padding-right: 135px;
   }
 
   #portal-colophon {
+    color: #00a19a;
+    font-size: 0.77em;
+    padding-right: 135px;
     overflow: hidden;
   }
 
@@ -1261,7 +1270,7 @@
     box-shadow: 0 -1px rgba(0, 161, 154, 0.9);
     content: "";
     display: block;
-    margin: 0 0 -9px;
+    margin: 0 -135px -9px 0;
   }
 
   #portal-footer-wrapper p {

@@ -217,11 +217,15 @@
   width: 20px;
   @include hide-text;
   }
-#portal-footer-wrapper {
+#portal-footer {
   color: $mainColor;
   font-size: 0.77em;
+  padding-right: 135px;
   }
 #portal-colophon {
+  color: $mainColor;
+  font-size: 0.77em;
+  padding-right: 135px;
   overflow: hidden;
   }
 #portal-colophon:after {
@@ -231,7 +235,7 @@
   box-shadow: 0 -1px rgba(0, 161, 154, 0.9);
   content: "";
   display: block;
-  margin: 0 0 -9px;
+  margin: 0 -135px -9px 0;
   }
 #portal-footer-wrapper p {
   margin: 0;
