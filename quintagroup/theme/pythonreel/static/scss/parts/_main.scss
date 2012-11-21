@@ -90,9 +90,9 @@ img.tileImage {
   border-bottom: 1px solid #5ec3bf;
   box-shadow: 0 5px 24px rgba(0, 106, 107, 0.21);
   }
-#portal-header-wrapper {  
-  color: $mainColor;
+#portal-header-wrapper {
   margin: auto;
+  position: relative;
   width: 960px;
   }
 #portal-header {

@@ -64,7 +64,7 @@
         <after css:content="head link:not([href*='ploneCustom'])" theme="/html/head/title" />
         <after content="/html/head/style | /html/head/script" theme="/html/head/title" />
         <after css:content="head link[href*='ploneCustom']" theme-children="/html/head" />
-        <drop theme="descendant-or-self::style" if="($columnonewidth = 'default') or ($columntwowidth = 'default') or ($columnsmargin = 'default')" />
+        <!--drop theme="descendant-or-self::style" if="($columnonewidth = 'default') or ($columntwowidth = 'default') or ($columnsmargin = 'default')" /-->
         <after theme-children="/html/head/style" if="($columnonewidth != 'default') or ($columntwowidth != 'default') or ($columnsmargin != 'default')">
             #portal-column-one {width:<xsl:value-of select="number($columnonewidth)" />%;}
             #portal-column-two { margin-left:-<xsl:value-of select="number($columntwowidth)" />%;width:<xsl:value-of select="number($columntwowidth)" />%;}
@@ -72,6 +72,33 @@
             #portal-column-content.width-3\3a 4.position-1\3a 4 { width:<xsl:value-of select="100-number($columnonewidth)-number($columnsmargin)" />%;}
             #portal-column-content.width-3\3a 4.position-0 {width:<xsl:value-of select="100-number($columntwowidth)-number($columnsmargin)" />%;}
             #portal-column-content.position-1\3a 4 {margin-left:-<xsl:value-of select="100-number($columnonewidth)-number($columnsmargin)" />%;}
+        </after>
+        <after theme-children="/html/head/style" if="$top = 'white'">
+            #theme-globalnav a, #theme-globalnav a:visited {color: #fff;}
+            #theme-globalnav .selected a, #theme-globalnav a:hover {color: #02fada;}
+            #portal-personaltools dt a, #portal-personaltools #anon-personalbar a {color: #fff; color:rgba(255,255,255,0.8);}
+            #portal-searchbox .searchField {color: #fff; color:rgba(255,255,255,0.7); text-shadow: 1px 1px rgba(5, 136, 119, 0.58);}
+            #portal-searchbox .searchField::-webkit-input-placeholder {color:rgba(255,255,255,0.7); text-shadow: 1px 1px rgba(5, 136, 119, 0.58);}
+            #portal-searchbox .searchButton[type="submit"] {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAsVBMVEX////Z7epzvLP///8FiHff8O3n8/Ll8vHN5+T4/Pvi8O5Xr6Tn8vDE498FiHf///8FiHf////q9fTy9vbu9fX///8sm4zI5eEmmInW6+jN5+Tx9vX8/Pzt9/X///+w2dSUzMVktav///9Nqp7////1+Pik1M0FiHe+4NzS6uYFiHc3oJLb7uv///9gs6kFiHfD496s19IFiHcFiHf///////8FiHcFiHcFiHf5+fkAAAAbU97iAAAAO3RSTlM4oICGIJqhlhxnpmatkkEiVHugsagWSI9UoZqyq51kc4kdQ3ZwsI40l4gNcZ2dexosES5OWgsGFGi4AFUfvwUAAAChSURBVHjavdHXDsIwDAXQsvfeG7o3LWmT3Pz/h6GiviQoj+AXWzqSJfsaQlc/kiIBztfyWxZAfDjhkqtSYBlxsj9iRxVJEM1DIfI1trKUiHlYDQOkVJIZfFJvTZ/yNoynn96CpYiNSdVMdDiTZeOgZxo2YBH1nmwIAA58popgI9dt8gYCSWrzvHbZRaD5aH+Fm+bXGe4vTQoPrhNB9cn9V95d+oWD1pKyyQAAAABJRU5ErkJggg==);}
+            #slogan, #top-carousel .carousel-text, #top-carousel .carousel-text a {color: #fff; color:rgba(255,255,255,0.8);}
+            #portal-header .carousel-pager-button-prev:hover {
+              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEUAlY4Ai4UCJCMCAgIAlpAAlY4Agn0CAgIBcGsAfHcBd3IAlY8CAgICAgIAkYsCAgIAlY4BOjgCAgICAgICAgICAgICAgIBV1MBYV0CAgICAgIAAAAAnZYAoZrLfgVkAAAAHHRSTlPraRwRxdlZBz1ORfsSC38BjyIJDAUKDS0yAwIANoTZvwAAAFZJREFUeNrt0ckOgCAMRVEEBxwRFIdi//83dQtJG5fGcLcnTV5SEdgyv2PjgWEvpx0oblQt8DgJ3nSJSPLaXo8y113FcXBD0SccN9o5Xp4EC3z1JX/hG4qxXWXni8fqAAAAAElFTkSuQmCC);
+            }
+            #portal-header .carousel-pager-button-prev {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEXb29vr6+vu7u7Ozs7t7e2xsbECAgI5OTkCAgK9vb0CAgLs7OzExMQCAgLl5eUCAgLr6+tbW1sCAgICAgICAgICAgICAgKJiYmampoCAgICAgIAAAD5+fn///+j31NKAAAAHHRSTlNp68VZ2T0HHBFFEvtOC38BjyIJDAUKDS0yAwIAuaKgUQAAAFZJREFUeNrt0ckOgCAMRVEEBxwRFIdi//83dQtJG5fGcLcnTV5SEdgyv2PjgWHfTDtQXGtV4HESvFUSkeR1uB5lrtuS4+A60SccN9o5Xp4EC3z1JX/hG41UXWXf1oEJAAAAAElFTkSuQmCC);
+            }
+            #portal-header .carousel-pager-button-next:hover {
+              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEUAlY8Ai4UCJCMAlY4AlY4AlpABOjgAhX8AlY4Bd3ICAgICAgIAkYsCAgIBcGsCAgICAgICAgICAgIAfHcCAgIBV1MCAgICAgIBYV0CAgICAgIAAAAAn5gAoZq0C11YAAAAHHRSTlPtaRz02cUiW49FEgt/ET0BDAkHTgUtCg0yAwIAji+vgwAAAFFJREFUeNrt0UsOgCAMBFAQUfwgggpa6P2v6QkYt8bY7cskM6nI8H5+ZFoJMB2mm+p8nazk6AEzt0NCzGXbAesFpEVvQ7353ES0O7q3vuRTfAOTZ11lvJ2IngAAAABJRU5ErkJggg==);
+            }
+            #portal-header .carousel-pager-button-next {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEXb29vu7u5bW1vs7OzS0tLt7e3t7e05OTnr6+u9vb0CAgICAgLl5eWxsbECAgICAgICAgICAgICAgLExMQCAgKJiYkCAgICAgKampoCAgICAgIAAAD8/Pz///8llCPiAAAAHHRSTlNpxSL0W9ntHI9FEgt/PQERDAkHTgUtCg0yAwIANVR9+QAAAFFJREFUeNrt0UsOgCAMBFAQUfwgggpa6P2v6QkYt8bY7cskM6nI8H5+ZFoJMB2mmep8nazE6AEz6yEh5rLtgKUF6a51od587iPaHZe3vuRTfAOP7V1lL0ObTwAAAABJRU5ErkJggg==);
+            }
+        </after>
+        <after theme-children="/html/head/style" if="$top_image != ''">
+          #portal-top {background:url(<xsl:value-of select="$top_image" />) 50% 0;}
+        </after>
+        <after theme-children="/html/head/style" css:if="#top-carousel">
+          #portal-top {background:<xsl:value-of select="$top_background" />;}
         </after>
 
         <!--  Body -->
@@ -91,10 +118,16 @@
         <after css:theme="#portal-header" css:content="#portlets-in-header" />
         <after css:theme="#portal-header" css:content=".manageInHeaderPortletsLink" />
         
+        <drop css:theme="#slogan" css:if="#top-carousel .carousel-text" />
         <replace css:theme="#slogan">
           <span id="slogan" class="visualNoPrint"><xsl:value-of select="$slogan" /></span>
         </replace>  
-
+        
+        <drop css:content="#top-carousel" />   
+        <replace css:content="#top-carousel .carousel-banners" css:theme="#top-carousel .carousel-banners" method="raw" />
+        <replace css:content="#top-carousel script" css:theme="#top-carousel script" method="raw" />
+        <replace css:content="#top-carousel .carousel-pager" css:theme=".top-carousel-pager" method="raw" />
+        
         <!-- Portlets -->
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
