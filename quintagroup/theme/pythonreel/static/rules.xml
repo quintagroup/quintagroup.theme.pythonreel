@@ -74,24 +74,31 @@
             #portal-column-content.position-1\3a 4 {margin-left:-<xsl:value-of select="100-number($columnonewidth)-number($columnsmargin)" />%;}
         </after>
         <after theme-children="/html/head/style" if="$top = 'white'">
-            #theme-globalnav a, #theme-globalnav a:visited {color: #fff;}
+            #theme-globalnav a, #theme-globalnav a:visited, #portlets-in-header {color: #fff;}
             #theme-globalnav .selected a, #theme-globalnav a:hover {color: #02fada;}
             #portal-personaltools dt a, #portal-personaltools #anon-personalbar a {color: #fff; color:rgba(255,255,255,0.8);}
             #portal-searchbox .searchField {color: #fff; color:rgba(255,255,255,0.7); text-shadow: 1px 1px rgba(5, 136, 119, 0.58);}
             #portal-searchbox .searchField::-webkit-input-placeholder {color:rgba(255,255,255,0.7); text-shadow: 1px 1px rgba(5, 136, 119, 0.58);}
             #portal-searchbox .searchButton[type="submit"] {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAsVBMVEX////Z7epzvLP///8FiHff8O3n8/Ll8vHN5+T4/Pvi8O5Xr6Tn8vDE498FiHf///8FiHf////q9fTy9vbu9fX///8sm4zI5eEmmInW6+jN5+Tx9vX8/Pzt9/X///+w2dSUzMVktav///9Nqp7////1+Pik1M0FiHe+4NzS6uYFiHc3oJLb7uv///9gs6kFiHfD496s19IFiHcFiHf///////8FiHcFiHcFiHf5+fkAAAAbU97iAAAAO3RSTlM4oICGIJqhlhxnpmatkkEiVHugsagWSI9UoZqyq51kc4kdQ3ZwsI40l4gNcZ2dexosES5OWgsGFGi4AFUfvwUAAAChSURBVHjavdHXDsIwDAXQsvfeG7o3LWmT3Pz/h6GiviQoj+AXWzqSJfsaQlc/kiIBztfyWxZAfDjhkqtSYBlxsj9iRxVJEM1DIfI1trKUiHlYDQOkVJIZfFJvTZ/yNoynn96CpYiNSdVMdDiTZeOgZxo2YBH1nmwIAA58popgI9dt8gYCSWrzvHbZRaD5aH+Fm+bXGe4vTQoPrhNB9cn9V95d+oWD1pKyyQAAAABJRU5ErkJggg==);}
             #slogan, #top-carousel .carousel-text, #top-carousel .carousel-text a {color: #fff; color:rgba(255,255,255,0.8);}
-            #portal-header .carousel-pager-button-prev:hover {
-              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEUAlY4Ai4UCJCMCAgIAlpAAlY4Agn0CAgIBcGsAfHcBd3IAlY8CAgICAgIAkYsCAgIAlY4BOjgCAgICAgICAgICAgICAgIBV1MBYV0CAgICAgIAAAAAnZYAoZrLfgVkAAAAHHRSTlPraRwRxdlZBz1ORfsSC38BjyIJDAUKDS0yAwIANoTZvwAAAFZJREFUeNrt0ckOgCAMRVEEBxwRFIdi//83dQtJG5fGcLcnTV5SEdgyv2PjgWEvpx0oblQt8DgJ3nSJSPLaXo8y113FcXBD0SccN9o5Xp4EC3z1JX/hG4qxXWXni8fqAAAAAElFTkSuQmCC);
+            #top-carousel .carousel-pager-button-prev {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAWlBMVEXt7e3b29sCAgICAgLOzs7u7u7r6+uxsbE5OTnExMTs7Oy9vb0CAgICAgLl5eUCAgLr6+tbW1sCAgICAgICAgICAgICAgKJiYmampoCAgICAgIAAAD5+fn///8AGJvsAAAAHHRSTlPZaQcRWcXrPRxO+0USC38BjyIJDAUKDS0yAwIAucAK4AAAAE9JREFUeNqNzskOgCAMRVEERRxwAHEo9P9/UxNB6Y67O2nyUuZpxZ4d5HZqOuAzF7XE80re2wbx99aFh/l9YMTejFWf/KbXJe7HwELZv7QbYxsWNE5yiGYAAAAASUVORK5CYII=);
             }
-            #portal-header .carousel-pager-button-prev {
-              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEXb29vr6+vu7u7Ozs7t7e2xsbECAgI5OTkCAgK9vb0CAgLs7OzExMQCAgLl5eUCAgLr6+tbW1sCAgICAgICAgICAgICAgKJiYmampoCAgICAgIAAAD5+fn///+j31NKAAAAHHRSTlNp68VZ2T0HHBFFEvtOC38BjyIJDAUKDS0yAwIAuaKgUQAAAFZJREFUeNrt0ckOgCAMRVEEBxwRFIdi//83dQtJG5fGcLcnTV5SEdgyv2PjgWHfTDtQXGtV4HESvFUSkeR1uB5lrtuS4+A60SccN9o5Xp4EC3z1JX/hG41UXWXf1oEJAAAAAElFTkSuQmCC);
+            #top-carousel .carousel-pager-button-prev:hover {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAWlBMVEUBcGsAi4UAlpAAlY4AlY4CAgIAgn0CJCMCAgIAfHcCAgIAlY8CAgIBd3IAkYsCAgIAlY4BOjgCAgICAgICAgICAgICAgIBV1MBYV0CAgICAgIAAAAAnZYAoZoyVQ7kAAAAHHRSTlM9acXZ6wdZHBFOEvsLRX8BjyIJDAUKDS0yAwIA4DwEcgAAAE9JREFUeNqNzskOgCAMRVEERRxwAHEo9P9/UxNB6Y67O2nyUuZpxZ4d5HbtdMDnRskazyt5Zxzx99aFh/ldC2Jv+mpIfhvXJe7HwELZv7QbY0wWNC0cRm8AAAAASUVORK5CYII=);
             }
-            #portal-header .carousel-pager-button-next:hover {
-              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEUAlY8Ai4UCJCMAlY4AlY4AlpABOjgAhX8AlY4Bd3ICAgICAgIAkYsCAgIBcGsCAgICAgICAgICAgIAfHcCAgIBV1MCAgICAgIBYV0CAgICAgIAAAAAn5gAoZq0C11YAAAAHHRSTlPtaRz02cUiW49FEgt/ET0BDAkHTgUtCg0yAwIAji+vgwAAAFFJREFUeNrt0UsOgCAMBFAQUfwgggpa6P2v6QkYt8bY7cskM6nI8H5+ZFoJMB2mm+p8nazk6AEzt0NCzGXbAesFpEVvQ7353ES0O7q3vuRTfAOTZ11lvJ2IngAAAABJRU5ErkJggg==);
+            #top-carousel .carousel-pager-button-next {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAWlBMVEXt7e1bW1vb29vs7Ozu7u7S0tLt7e05OTnr6+u9vb0CAgICAgICAgLl5eWxsbECAgICAgICAgICAgLExMQCAgKJiYkCAgICAgKampoCAgICAgIAAAD8/Pz////e13uvAAAAHHRSTlPZImn0xVvtHI9FEgsRfz0BDAkHTgUtCg0yAwIACz0KjwAAAElJREFUeNqNzksSgCAMA1AUUVQU+YhS7P2v6Tbdkd2bzLRRTabLdBGabjvs4PqyHreAZlbrI8xfyujpxH42LsL9Yynif/H9e2V+ZKUWNE4JOqQAAAAASUVORK5CYII=);
             }
-            #portal-header .carousel-pager-button-next {
-              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAWlBMVEXb29vu7u5bW1vs7OzS0tLt7e3t7e05OTnr6+u9vb0CAgICAgLl5eWxsbECAgICAgICAgICAgICAgLExMQCAgKJiYkCAgICAgKampoCAgICAgIAAAD8/Pz///8llCPiAAAAHHRSTlNpxSL0W9ntHI9FEgt/PQERDAkHTgUtCg0yAwIANVR9+QAAAFFJREFUeNrt0UsOgCAMBFAQUfwgggpa6P2v6QkYt8bY7cskM6nI8H5+ZFoJMB2mmep8nazE6AEz6yEh5rLtgKUF6a51od587iPaHZe3vuRTfAOP7V1lL0ObTwAAAABJRU5ErkJggg==);
+            #top-carousel .carousel-pager-button-next:hover {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAWlBMVEUCJCMAi4UAlpAAlY4AlY4AhX8BOjgAlY8AlY4Bd3ICAgICAgICAgIAkYsBcGsCAgICAgICAgICAgIAfHcCAgIBV1MCAgICAgIBYV0CAgICAgIAAAAAn5gAoZrtX2djAAAAHHRSTlMcacXZ9Fsi7Y9FEgsRfz0BDAkHTgUtCg0yAwIA1NCk4AAAAElJREFUeNqNzksSgCAMA1AUUVQU+YhS7P2v6Tbdkd2bzLRRTabLdBGabjvv4PryNGwBzazXR5i/lNHjif1iXIT7hyrif/H9e2V+ZxQWNNuqwOcAAAAASUVORK5CYII=);
+            }
+            .carousel-pager-item {
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAMAAAB8rpxtAAAAWlBMVEXs7OxHR0fu7u7k5ORHR0ft7e3l5eXc3NzAwMBHR0fq6urCwsJHR0dHR0dHR0esrKxHR0dHR0d8fHxHR0dHR0dHR0fr6+tHR0fi4uJHR0cAAADz8/P5+fn///9sWy2HAAAAG3RSTlPsGsF7G8WBa0kLi0wCHhY8CQ0qAQwG8g55EgCaYbRJAAAAUUlEQVR42k3NRw6AMAxE0dBregd8/2sij0DKX/ltPOJqAvwW4o/slrLWEzA6EdFeATURd0SGfIDZMsYElMDIA9/JeXyrRdy9zt+O7aQy2Gl6AVqrC+o7xVXfAAAAAElFTkSuQmCC);
+            }
+            .carousel-pager-item:hover,
+            .carousel-pager-item-active {              
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAMAAAB8rpxtAAAAZlBMVEUI/9kAm5MI/9kApJoI/9kI/9kCva0Cu6wI/9kE1b0Bt6kI/9kI/9kApJkI/9kDxLEI/9kF1r4I/9kI/9kI/9kI/9kF4MQH8tAI/9kI/9kCvq4I/9kAmpII/9kAAAAAnZYAoJgAoZqN6Yt7AAAAH3RSTlNB9EnTNRaWmkNxpQ8a1g6KF29LNgUiZFUEH5Qj+S0Ah9hAnwAAAFNJREFUeNpNzUcOgDAMRNHQeyc9AXz/SyKPQMpf+W084koCzGjnH14vbosnsKpARH0Ejom4bmDsD9BIRhsAZxm+5jtog2/RZXeh/LcjRV5W2El6AeTiDbaxPYTfAAAAAElFTkSuQmCC);
             }
         </after>
         <after theme-children="/html/head/style" if="$top_image != ''">
@@ -124,13 +131,12 @@
         </replace>  
         
         <drop css:content="#top-carousel" />   
-        <replace css:content="#top-carousel .carousel-banners" css:theme="#top-carousel .carousel-banners" method="raw" />
-        <replace css:content="#top-carousel script" css:theme="#top-carousel script" method="raw" />
-        <replace css:content="#top-carousel .carousel-pager" css:theme=".top-carousel-pager" method="raw" />
+        <replace css:content="#top-carousel" css:theme="#top-carousel" method="raw" />
         
         <!-- Portlets -->
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
+        <drop css:content=".navTree img" />
 
         <!-- Content -->
         <strip css:content="#portal-column-content > div:not(#viewlet-above-content):not(#viewlet-below-content)" if-content="//div[@id='portal-column-content']/div/div[@id='content']" />
