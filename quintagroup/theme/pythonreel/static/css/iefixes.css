@@ -25,15 +25,24 @@
 .collapsible .collapser.expanded {
   z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '&#9660;'));
   }
+#portal-header {
+  border-top: 5px solid rgb(0, 161, 154);
+  }
 .searchButton[type="submit"] {
   padding-top: 25px;
   }
 #portal-personaltools-wrapper {
   display: inline;
   }
-#theme-globalnav {
-  border-top: 5px solid rgb(0, 161, 154);
-  }
+#theme-globalnav li {
+  display: inline;
+  zoom: 1;
+}
+#theme-globalnav ul {
+  left: 0;
+  list-style: none;
+  top: 100%;
+}
 #portal-column-content {
   padding: 0 !important;
   }

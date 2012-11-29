@@ -89,6 +89,7 @@ img.tileImage {
   background: url(../images/pat.png);
   border-bottom: 1px solid #5ec3bf;
   box-shadow: 0 5px 24px rgba(0, 106, 107, 0.21);
+  min-width: 960px;
   }
 #portal-header-wrapper {
   margin: auto;
@@ -97,6 +98,15 @@ img.tileImage {
   }
 #portal-header {
   padding: 0 0 33px;  
+}
+#portal-header:before {
+  border: 7px solid rgb(0, 161, 154);
+  border: 7px solid rgba(0, 161, 154, 0.75);
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 1px rgba(0, 161, 154, 0.9);
+  content: "";
+  display: block;
+  margin: -9px 0 0;
 }
 #portal-columns-wrapper {
   margin: auto;

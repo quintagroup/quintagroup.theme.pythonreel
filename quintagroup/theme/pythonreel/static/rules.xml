@@ -118,6 +118,8 @@
         <drop css:content="#portal-siteactions" />
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
         <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
+        <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
+        <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" />
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
         <drop css:content="#portal-breadcrumbs" /> 
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw"/>

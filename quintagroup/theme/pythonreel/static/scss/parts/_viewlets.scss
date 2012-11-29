@@ -11,15 +11,6 @@
   padding: 0;
   text-transform: lowercase;
   }
-#theme-globalnav:before {
-  border: 7px solid rgb(0, 161, 154);
-  border: 7px solid rgba(0, 161, 154, 0.75);
-  border-radius: 0 0 7px 7px;
-  box-shadow: 0 1px rgba(0, 161, 154, 0.9);
-  content: "";
-  display: block;
-  margin: -9px 0 0;
-  }
 #theme-globalnav li {
   display: inline-block;
   position: relative;
@@ -227,7 +218,6 @@
   font-size: 0.85em;
   line-height: 1.27em;
   list-style: none;
-  padding: 12px 0 0;
   }
 #portal-personaltools dt a,
 #portal-personaltools li a {

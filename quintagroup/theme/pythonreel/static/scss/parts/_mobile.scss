@@ -14,7 +14,68 @@ div.cell {
   margin: 0 !important;
   width: auto !important;
   }
-#visual-portal-wrapper {
+#portal-top {
+  min-width: 0;
+  }
+#portal-header {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#top-carousel {
+  display: none;
+}
+#portal-header-wrapper,
+#portal-columns-wrapper,
+#portal-bottom {
   margin: 0;
   width: auto;
-  }
+}
+#portal-searchbox {
+  clear: none;
+  float: left;
+  margin: 7px 0 15px;
+}
+#theme-globalnav {
+  clear: both;
+  margin: 0 0 15px;
+}
+#theme-globalnav > li > a {
+  margin-right: 10px;
+  padding: 0;
+}
+#theme-globalnav > li:hover > .hasChildrens {
+  background: none;
+}
+#theme-globalnav ul {
+  display: none !important;
+}
+#theme-globalnav.mobileMenuOn {
+  display:none;
+}
+#portal-globalnav-mobile {
+  display:block;
+  margin: 0 0 15px;
+} 
+#portal-logo {
+  margin: 0 0 15px;
+  max-width: 100%;
+}
+#portal-logo img {
+  max-width: 100%;
+}
+#slogan {
+  max-width: none;
+}
+#portal-path {
+  margin: 0 10px;
+  width: auto;
+}
+#portal-column-content,
+#portal-column-one,
+#portal-column-two {
+  padding: 0 10px !important;
+}
+#portal-footer,
+#portal-colophon {
+  padding-left: 10px;
+}
