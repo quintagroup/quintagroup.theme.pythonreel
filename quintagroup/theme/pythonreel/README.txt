@@ -52,7 +52,7 @@ Features
 
 **Configurable left/right column width** 
 
-  Python Reel is flexible. It is easy to change the page layout by configuring columns width. Just go to *Site Setup -> Theming -> Advanced Settings* tab. In *Parameter expressions* textarea change the *columnonewidth*, *columntwowidth* parameters. Also you need to set the distance between the left/right columns and central content area by defining *columnsmargin* parameter. The parameter values are set in percents. Together they should allocate 100% including content area.
+  Python Reel is flexible. It is easy to change the page layout by configuring columns width. Just go to *Site Setup -> Theming -> Advanced Settings* tab. In *Parameter expressions* textarea change the *columnonewidth*, *columntwowidth* parameters. Also you need to set the distance between the left/right columns and central content area by defining *columnsmargin* parameter. The parameter values are set in percents. Together they should allocate 100% including content area. By default left/right column has got 23.75%, content area - 49.1667%, columns margin – 1.6667%.
 
 **Editable footer**
 
