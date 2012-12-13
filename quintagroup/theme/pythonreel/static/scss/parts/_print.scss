@@ -90,11 +90,12 @@ input.standalone,
 .draggingHook,
 #foldercontents-order-column,
 input.context,
-.visualNoPrint {
+.visualNoPrint,
+#go-top,
+.slinks {
   display:none;
   }
 .image-left {
-  border:0.4pt solid #000;
   clear:left;
   float:left;
   margin:0.5em 1em 0.5em 0;
@@ -103,7 +104,6 @@ input.context,
   float:none;
   }
 .image-right {
-  border:0.4pt solid #000;
   clear:right;
   float:right;
   margin:0.5em;
@@ -122,7 +122,6 @@ dl.captioned {
   width:16em;
   }
 .tileImage {
-  border:0.4pt solid #000;
   float:right;
   margin:0 0 0.5em 0.5em;
   }
