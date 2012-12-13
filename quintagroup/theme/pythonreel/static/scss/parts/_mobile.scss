@@ -1,9 +1,6 @@
 /* ==========================================================================
      Mobile styles
      ========================================================================== */
-body {
-  // font-size: 1.06em;
-  }
 div.row {
   float: none;
   width: auto;
@@ -21,19 +18,21 @@ div.cell {
   padding-left: 10px;
   padding-right: 10px;
 }
-#top-carousel {
-  display: none;
-}
 #portal-header-wrapper,
 #portal-columns-wrapper,
 #portal-bottom {
   margin: 0;
   width: auto;
 }
+#portal-personaltools {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
 #portal-searchbox {
   clear: none;
-  float: left;
   margin: 7px 0 15px;
+  z-index: 4;
 }
 #theme-globalnav {
   clear: both;
@@ -78,4 +77,39 @@ div.cell {
 #portal-footer,
 #portal-colophon {
   padding-left: 10px;
+}
+.carousel-banners,
+.carousel-slider,
+.carousel-banner {
+  max-width: 100%;
+  }
+.carousel-image img {
+  height: auto;
+  width: auto;
+  }
+#top-carousel .carousel-text {
+  bottom: 0;
+  height: 33px;
+  left: 10px;
+  overflow: hidden;
+  padding: 0;
+  top: auto;
+  right: 45px;
+}
+#top-carousel .carousel-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#top-carousel .carousel-body {
+  display: none;
+}
+#top-carousel .carousel-pager {
+  left: auto;
+  right: 0;
+}
+#portlets-in-header,
+#portlets-footer {
+  margin: 0 10px;
 }

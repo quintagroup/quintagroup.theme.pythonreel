@@ -1025,7 +1025,7 @@
    */
   #theme-globalnav {
     font-size: 1.31em;
-    line-height: 1.17em;
+    line-height: 1.18em;
     margin: 0 0 85px;
     padding: 0;
     text-transform: lowercase;
@@ -1034,7 +1034,7 @@
   #theme-globalnav li {
     display: inline-block;
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 
   #theme-globalnav > li > a {
@@ -1208,6 +1208,10 @@
   #portal-logo {
     display: inline-block;
     margin: 0 75px 0 0;
+    vertical-align: top;
+  }
+
+  #portal-logo img {
     vertical-align: top;
   }
 
@@ -1420,6 +1424,11 @@
     left: 50%;
     padding: 0 1em 0 0;
     top: 110px;
+    z-index: 1;
+  }
+
+  #top-carousel .carousel-text a {
+    color: #00a19a;
   }
 
   .carousel-text * {
@@ -1440,8 +1449,8 @@
     left: 50%;
     margin: 0 0 0 -4px;
     padding: 0;
+    right: auto;
     text-align: right;
-    width: 480px;
     z-index: 2;
   }
 
@@ -1575,6 +1584,10 @@
 
   .portletNavigationTree a:visited {
     color: #00a19a;
+  }
+
+  .portletNavigationTree a:hover {
+    color: #ff8a00;
   }
 
   .navTreeLevel0 {
@@ -2895,10 +2908,6 @@
     padding-right: 10px;
   }
 
-  #top-carousel {
-    display: none;
-  }
-
   #portal-header-wrapper,
   #portal-columns-wrapper,
   #portal-bottom {
@@ -2906,10 +2915,16 @@
     width: auto;
   }
 
+  #portal-personaltools {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
   #portal-searchbox {
     clear: none;
-    float: left;
     margin: 7px 0 15px;
+    z-index: 4;
   }
 
   #theme-globalnav {
@@ -2966,6 +2981,48 @@
   #portal-footer,
   #portal-colophon {
     padding-left: 10px;
+  }
+
+  .carousel-banners,
+  .carousel-slider,
+  .carousel-banner {
+    max-width: 100%;
+  }
+
+  .carousel-image img {
+    height: auto;
+    width: auto;
+  }
+
+  #top-carousel .carousel-text {
+    bottom: 0;
+    height: 33px;
+    left: 10px;
+    overflow: hidden;
+    padding: 0;
+    top: auto;
+    right: 45px;
+  }
+
+  #top-carousel .carousel-title {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #top-carousel .carousel-body {
+    display: none;
+  }
+
+  #top-carousel .carousel-pager {
+    left: auto;
+    right: 0;
+  }
+
+  #portlets-in-header,
+  #portlets-footer {
+    margin: 0 10px;
   }
 }
 @media print {

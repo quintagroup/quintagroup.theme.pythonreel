@@ -65,6 +65,9 @@ dt.portletHeader {
 .portletNavigationTree a:visited {
   color: #00a19a;
   }
+.portletNavigationTree a:hover {
+  color: $secondaryColor;
+  }
 .navTreeLevel0 {
   font-size: 1.5em;
   line-height: 1.33em;
