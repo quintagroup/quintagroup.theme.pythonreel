@@ -8,8 +8,7 @@
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
     <notheme if-path="@@manage-viewlets" />
-    
-    
+    <notheme if="$ajax_load" />    
     
     <xsl:template css:match="#portal-colophon">
         <div id="portal-colophon">
@@ -31,7 +30,6 @@
     <xsl:template css:match="#portal-globalnav li:last-child">
       <li>
         <xsl:attribute name="class">last <xsl:value-of select="./@class" /></xsl:attribute>
-        <xsl:attribute name="id"><xsl:value-of select="./@id" /></xsl:attribute>
         <xsl:apply-templates />
       </li>
     </xsl:template>
@@ -46,6 +44,9 @@
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
 
+        <!-- HTML -->
+        <copy attributes="*" content='/html' theme='/html' />
+        
         <!--  Header -->
         <drop css:theme="meta[http-equiv='Content-type']" />
         <drop css:content="meta[name='viewport']" />
