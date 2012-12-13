@@ -12,8 +12,8 @@
     
     <xsl:template css:match="#portal-colophon">
         <div id="portal-colophon">
-            <p class="credits"><a href="http://skins.quintagroup.com">Plone Theme/Design</a> by <a href="http://quintagroup.com">Quintagroup</a> © 2005-2012</p>
-            <p><xsl:value-of select="." /></p>
+            <p class="credits"><a href="http://themes.quintagroup.com/product/pythonreel">Python Reel Plone Theme</a> by <a href="http://quintagroup.com">Quintagroup</a> © 2005-2012</p>
+            <xsl:apply-templates />
         </div>
     </xsl:template>
     <xsl:template css:match=".portletNavigationTree .navTreeLevel0 .navTree">

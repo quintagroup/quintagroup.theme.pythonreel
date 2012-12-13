@@ -1346,6 +1346,12 @@
     margin: 0;
   }
 
+  .colophonWrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   /*
    * Social Links
    */
