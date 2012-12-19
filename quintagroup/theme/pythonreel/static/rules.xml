@@ -12,7 +12,7 @@
     
     <xsl:template css:match="#portal-colophon">
         <div id="portal-colophon">
-            <p class="credits"><a href="http://themes.quintagroup.com/product/pythonreel">Python Reel Plone Theme</a> by <a href="http://quintagroup.com">Quintagroup</a> © 2005-2012</p>
+            <p class="credits"><a href="http://quintagroup.com">Python Reel Plone Theme</a> by <a href="http://quintagroup.com">Quintagroup</a> © 2005-2012</p>
             <xsl:apply-templates />
         </div>
     </xsl:template>
