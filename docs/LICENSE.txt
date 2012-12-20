@@ -1,16 +1,48 @@
-  quintagroup.theme.pythonreel is copyright Quintagroup
+Premium Plone Themes License Agreement
+--------------------------------------
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  GNU General Public License for more details.
+Important! Read carefully. Your purchase, installing, and using of our Plone Themes products implies that you have read and accepted these Terms and Conditions. If you do not agree to the terms and conditions of this License, do not download, install or use our products.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 59 Temple Place, Suite 330, Boston,
-  MA 02111-1307 USA.
+LICENSE
+=======
+
+When you purchase any of Quintagroup Commercial Plone Themes you automatically get the One License. It enables you to use the Theme on a single Plone website only, belonging to either you or your client. If you need to use the theme on other websites then you will have to purchase additional licenses for each website project separately.
+
+Thus, you need to purchase as many licenses as many websites you are going to use our Plone theme on. If you have one web site with several sub domains you can use one theme for that, you don't need to purchase licenses for your sub domains. In case you have 2 or more different domains then you need to purchase as many licenses for the same theme as many domains you have.
+
+IMAGERY, CLIPARTS AND FONTS
+===========================
+
+All imagery, clipart and fonts used in our themes are royalty-free and are the integral part of our skins. This license gives you the right to use images, clipart and fonts only as a part of the website you build using our theme. You can use imagery, clipart and fonts to develop one project only. Any kind of separate usage or distribution is strictly prohibited. Use of any detail of a theme in another project requires purchase of additional theme license.
+
+MODIFICATIONS
+=============
+
+You are authorized to make necessary modification(s) to our themes to any extent needed to fit your purposes. You can not use a header of the theme for one project though, and images from the template for the different project.
+
+We provide instructions on themes customization for most of our premium themes. If you are not sure you can customize the theme yourself we recommend to hire a design studio to customize the skin for you.
+
+UNAUTHORIZED USE
+================
+
+You can not offer our Plone themes for redistribution or resale of any kind without prior written consent from our company.
+
+OWNERSHIP
+=========
+
+You do not claim intellectual property right or exclusive ownership to any of our themes, modified or unmodified. All products are property of independent content providers. Our products are provided "as is" without warranty of any kind, either expressed or implied. In no event shall our company or its agents be liable for any damages including, but not limited to, direct, indirect, special, punitive, incidental or consequential, or other losses arising out of the use of or inability to use our products.
+
+Using a theme on several sub domains
+====================================
+
+Let's say you have a domain, e.g www.mywebsite.com with three sub domains:
+
+* one.mywebsite.com
+* two.mywebsite.com
+* three.mywebsite.com 
+
+If you purchase our Plone Theme for www.mywebsite.com you won't need to purchase 3 licenses more for your sub domains. So if you have one web site with several sub domains you can use one template for that.
+
+In case you have 2 or more different domains e.g. www.mywebsite.com and www.mynewwebsite.com then you will need to purchase 2 licenses for the same theme. In other words, you need to purchase this theme twice, but we'd recommend that you buy 2 licenses for the skin, which will be cheaper than buying a skin for two times.

@@ -1,7 +1,6 @@
 Changelog
 =========
 
-1.0dev (unreleased)
--------------------
+1.0 December 20, 2012
 
-- Initial release
+- Initial release [naivok]
