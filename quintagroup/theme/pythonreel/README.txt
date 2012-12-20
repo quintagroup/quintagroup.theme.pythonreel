@@ -1,6 +1,6 @@
 Python Reel Theme
 =================
-`Python Reel Theme <http://themes.quintagroup.com/pythonreel>`_ is a free fully responsive diazo theme for Plone 4.2.2.
+`Python Reel Theme <http://themes.quintagroup.com/product/pythonreel>`_ is a free fully responsive diazo theme for Plone 4.2.2.
 
 Features
 --------
@@ -54,9 +54,19 @@ Features
 
   Python Reel is flexible. It is easy to change the page layout by configuring columns width. Just go to *Site Setup -> Theming -> Advanced Settings* tab. In *Parameter expressions* textarea change the *columnonewidth*, *columntwowidth* parameters. Also you need to set the distance between the left/right columns and central content area by defining *columnsmargin* parameter. The parameter values are set in percents. Together they should allocate 100% including content area. By default left/right column has got 23.75%, content area - 49.1667%, columns margin – 1.6667%.
 
-**Editable footer**
+**Editable footer with Social media**
 
-  The theme footer features social media icons for sharing information via *Facebook, Twitter, LinkedIn,  Plus, RSS feed*. To customize it and edit the information displayed in the footer, go to *ZMI ->  portal_view_customizations -> plone.footer*.
+ The theme footer features social media icons for sharing information via *Facebook, Twitter, LinkedIn,  Plus, RSS feed*. To customize it and edit the information displayed in the footer, go to *ZMI ->  portal_view_customizations -> plone.footer*.
+
+ **Note:** if you have downloaded a *zip* file you need to add the following code manually into *plone.footer* template to have social media displayed::
+
+    <ul class="slinks">
+      <li><a href="#" class="slink linked-in-link">LinkedIn</a></li>
+      <li><a href="#" class="slink facebook-link">Facebook</a></li>
+      <li><a href="#" class="slink twitter-link">Twitter</a></li>
+      <li><a href="#" class="slink rss-link">RSS</a></li>
+    </ul>
+
 
 **Theme Extensions**
 
