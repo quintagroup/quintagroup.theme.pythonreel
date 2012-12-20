@@ -251,14 +251,6 @@
   margin: auto;
   width: 960px;
 }
-#go-top {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//PwMMMDIysgD5f2B8JiQJAYaYCGswDQUsUAluhqxUSwZT4yUMjx47AflfQCbAdPIyGBo0MjAxCTEEB6QD+XxgY4Gq+Bla6sIY2FhNwcr4+VKAxusCxTmYGPR0pBmkpSqRXMXKYG1RAmTxMILUgo1lYGBmQICvQPwFIMAAb10ak452mdkAAAAASUVORK5CYII=") 50% 50% no-repeat;
-  display: block;
-  height: 14px;
-  margin: auto;
-  width: 20px;
-  @include hide-text;
-  }
 #portal-footer {
   color: $mainColor;
   font-size: 0.77em;

@@ -4,7 +4,6 @@
      <li><a href="#" class="slink twitter-link">Twitter</a></li>
      <li><a href="#" class="slink rss-link">RSS</a></li>
 </ul>
-<a href="#portal-top" id="go-top" title="To Content">Go Top</a>
 <div i18n:domain="plone"
      id="portal-footer">
           <p>
