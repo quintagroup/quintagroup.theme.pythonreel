@@ -1,6 +1,6 @@
 Python Reel Theme
 =================
-`Python Reel Theme <http://themes.quintagroup.com/product/pythonreel>`_ is a free fully responsive diazo theme for Plone 4.2.2.
+`Python Reel Theme <http://themes.quintagroup.com/product/python-reel>`_ is a free fully responsive diazo theme for Plone 4.2.2.
 
 Features
 --------
@@ -112,7 +112,7 @@ Python Reel responsive diazo Theme was tested with:
 Home Directory
 ==============
 
-http://themes.quintagroup.com/product/pythonreel
+http://themes.quintagroup.com/product/python-reel
 
 Authors
 =======
