@@ -36,7 +36,7 @@ Then activate 'Python Reel Theme' in Plone (Site Setup -> Add-ons).
 Installation: development mode
 ==============================
 
-If you want to customize SunRain theme please use the following installation instructions: 
+If you want to customize Python Reel Theme please use the following installation instructions: 
 
 * download ``quintagroup.theme.pythonreel-version.zip`` archive from http://pypi.python.org/pypi/quintagroup.theme.pythonreel
 * extract theme archive to get ``quintagroup.theme.pythonreel-version`` folder. Remove version from 
@@ -62,5 +62,5 @@ If you want to customize SunRain theme please use the following installation ins
 
 * Install ``Python Reel Theme`` in Plone (Site Setup -> Add-ons).
 
-Now you can customize SunRain Theme by modifying ``quintagroup.theme.pythonreel`` package in ``src`` directory 
+Now you can customize Python Reel Theme by modifying ``quintagroup.theme.pythonreel`` package in ``src`` directory 
 of your buildout.
