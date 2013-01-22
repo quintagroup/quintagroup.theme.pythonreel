@@ -12,7 +12,7 @@
     
     <xsl:template css:match="#portal-colophon">
         <div id="portal-colophon">
-            <p class="credits"><a href="http://quintagroup.com">Python Reel Plone Theme</a> by <a href="http://themes.quintagroup.com">Themes.Quintagroup</a> © 2012</p>
+            <p class="credits"><a href="http://quintagroup.com">Python Reel Plone Theme</a> by <a href="http://themes.quintagroup.com">Themes.Quintagroup</a> © 2013</p>
             <xsl:apply-templates />
         </div>
     </xsl:template>
@@ -113,12 +113,13 @@
         <merge attributes="dir class" css:content="body" css:theme="body" />
 
         <!--  Top -->
-        <replace css:theme="#portal-header > p.hiddenStructure" css:content="#portal-header > p.hiddenStructure" />
+        <replace css:theme="#portal-header > p.hiddenStructure" css:content="#portal-header > p.hiddenStructure:first-child" />
         <drop content="*[@class='searchSection']" />
         <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
         <drop css:content="#portal-siteactions" />
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
         <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
+	<before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
         <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
         <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" />
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
