@@ -50,6 +50,10 @@
         <!--  Header -->
         <drop css:theme="meta[http-equiv='Content-type']" />
         <drop css:content="meta[name='viewport']" />
+	<drop css:content="link[href*='reset']" />
+	<drop css:content="link[href$='forms.css']" />
+	<drop css:content="link[href$='controlpanel.css']" />
+	<drop css:content="link[href$='authoring.css']" />
         <drop css:content="link[href$='public.css']" />
         <drop css:content="link[href$='columns.css']" />
         <drop css:content="link[href$='portlets.css']" />
@@ -57,7 +61,7 @@
         <drop css:content="link[href$='ploneKss.css']" />
         <drop css:content="link[href$='print.css']" />
         <drop css:content="link[href$='mobile.css']" />
-        <drop css:content="link[href*='base-cachekey']" />
+        <drop css:content="link[href*='base']" />
         <drop css:content="link[href$='favicon.ico']" />
         <before content="/html/head/meta" css:theme="meta[name='viewport']" />
         <before content="/html/head/base" theme="/html/head/title" />
@@ -121,7 +125,7 @@
         <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
 	<before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
         <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
-        <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" />
+        <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" css:if-content="#portal-globalnav-mobile"/>
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
         <drop css:content="#portal-breadcrumbs" /> 
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw"/>

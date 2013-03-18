@@ -47,8 +47,16 @@ dt.portletHeader {
 .managedPortletActions {
   float: right;
   }
-.managedPortletActions a {
-  margin: 0 2px;
+div.portletAssignments .managedPortletActions form {
+  display:inline;
+  }
+div.portletAssignments .managedPortletActions a,
+div.portletAssignments .managedPortletActions button {
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  margin:0;
+  padding:0;
   }
   
 /*
@@ -79,22 +87,30 @@ dt.portletHeader {
 .navTreeLevel1 {
   font-size: 0.78em;
   line-height: 1em;
-  margin: 1em 0;
+  margin: 9px 0 9px 18px;
   text-transform: none;
   }
 .navTreeLevel1 > .navTreeItem {
   margin: 0 0 0.5em;
   }
-.navTreeLevel1 > .navTreeItem > a:before {
-  content: "—";
-  }
 .navTreeLevel2 {
   font-size: 0.86em;
-  margin-left: 30px;
-}
+  margin:10px 0 10px 20px;
+  }
 .navTreeLevel2 .navTree {
-  margin: 0 0 6px 15px;
-}
+  margin: 5px 0 6px;
+  }
+.navTreeLevel3 {
+  line-height: 1.67em;
+  }
+.navTree.navTreeLevel3 li {
+  background: url(../images/bullet.png) no-repeat scroll 2px 8px;
+  padding-left: 13px;
+  }
+.navTree.navTreeLevel3 li:hover {
+  background-position: 2px -96px;
+  }
+
 
 /*
  * Portlet Search 

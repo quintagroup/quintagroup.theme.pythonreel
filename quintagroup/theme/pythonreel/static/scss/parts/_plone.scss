@@ -131,7 +131,7 @@ ul.configlets li a {
   color:#76797c;
   margin:0;
   }
-#kss-spinner {
+#ajax-spinner {
   background-position:50% 50%;
   display:none;
   height:20px;
@@ -633,12 +633,16 @@ table.grid th {
   }
 
 /*---------- DASHBOARD ----------*/
+#dashboard {
+  font-size:100%;
+  line-height:inherit;
+  }
 #dashboard-portlets1,
 #dashboard-portlets2,
 #dashboard-portlets3,
 #dashboard-portlets4 {
-  float:left;
   margin-right:1.3%;
+  padding:0;
   width:24%;
   }
 #dashboard-portlets4 {
