@@ -7,8 +7,8 @@ setup(name='quintagroup.theme.pythonreel',
       version=version,
       description="",
       long_description=open(os.path.join("quintagroup", "theme", "pythonreel", "README.txt")).read() + "\n\n" +
-                       open(os.path.join("docs", "INSTALL.txt")).read() + "\n\n"+
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open(os.path.join("docs", "INSTALL.rst")).read() + "\n\n"+
+                       open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
