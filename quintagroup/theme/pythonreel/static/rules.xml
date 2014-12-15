@@ -50,10 +50,10 @@
         <!--  Header -->
         <drop css:theme="meta[http-equiv='Content-type']" />
         <drop css:content="meta[name='viewport']" />
-	<drop css:content="link[href*='reset']" />
-	<drop css:content="link[href$='forms.css']" />
-	<drop css:content="link[href$='controlpanel.css']" />
-	<drop css:content="link[href$='authoring.css']" />
+    <drop css:content="link[href*='reset']" />
+    <drop css:content="link[href$='forms.css']" />
+    <drop css:content="link[href$='controlpanel.css']" />
+    <drop css:content="link[href$='authoring.css']" />
         <drop css:content="link[href$='public.css']" />
         <drop css:content="link[href$='columns.css']" />
         <drop css:content="link[href$='portlets.css']" />
@@ -69,6 +69,11 @@
         <after css:content="head link:not([href*='ploneCustom'])" theme="/html/head/title" />
         <after content="/html/head/style | /html/head/script" theme="/html/head/title" />
         <after css:content="head link[href*='ploneCustom']" theme-children="/html/head" />
+        <after theme-children="/html/head" >
+            <link href="test.css/" />
+        </after>
+
+
         <!--drop theme="descendant-or-self::style" if="($columnonewidth = 'default') or ($columntwowidth = 'default') or ($columnsmargin = 'default')" /-->
         <after theme-children="/html/head/style" if="($columnonewidth != 'default') or ($columntwowidth != 'default') or ($columnsmargin != 'default')">
             #portal-column-one {width:<xsl:value-of select="number($columnonewidth)" />%;}
@@ -123,9 +128,10 @@
         <drop css:content="#portal-siteactions" />
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
         <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
-	<before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
+    <before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
         <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
         <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" css:if-content="#portal-globalnav-mobile"/>
+        <after css:theme="#portal-path" css:content="#portal-top .panels" css:if-content="#nav" if-path="@@manage-panels"/> 
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
         <drop css:content="#portal-breadcrumbs" /> 
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw"/>
@@ -154,8 +160,12 @@
         <drop css:content="#plone-contentmenu-factories li a img" />
 
         <!-- Footer -->
-        <replace css:content="#portal-footer-wrapper" css:theme="#portal-footer-wrapper" />
+        <replace css:content="#portal-footer-wrapper .panels" css:theme="#portal-footer-wrapper .panels" />
+        <replace css:content="#portal-footer" css:theme="#portal-footer" />
+        <replace css:content="#portal-colophon" css:theme="#portal-colophon" />
+        <replace css:content=".manage-panels-link" css:theme=".manage-panels-link" />
 
     </rules>
+<!--     <xi:include href="test.css" /> -->
     <!-- <xi:include href="tune.xml" /> -->
 </rules>

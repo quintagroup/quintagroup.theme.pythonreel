@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.4 December 12, 2014
+
+- Added style for megamenu and slidertemplates products [roman.ischiv]
+- Remove "_" from name in scss file in theme in order to avoid errors when copy and modifying theme [roman.ischiv]
+
 1.1 March 18, 2013
 
 - Plone 4.3rc1 compatibility added [naivok]
