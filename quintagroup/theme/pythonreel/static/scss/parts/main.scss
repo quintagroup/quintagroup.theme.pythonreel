@@ -1,0 +1,151 @@
+/* ==========================================================================
+     Theme styles
+     ========================================================================== */
+/*----- Plone Elements -----*/
+.documentDescription {
+  color: $mainColor;
+  font-size: 1.32em;
+  line-height: 1.4;
+  margin: 0 0 1em;
+  }
+.discreet {
+  color:#666;
+  font-size:85%;
+  }
+.visualHighlight {
+  background-color:#ffb;
+  }
+.pullquote {
+  border-left:6px solid silver;
+  clear:right;
+  color:#444;
+  float:right;
+  font-size:1.17em;
+  line-height:1.42em;
+  margin:0 1em 1.5em 2.5em;
+  padding-left:10px;
+  width:35%;
+  }
+.callout {
+  background-color:#eee;
+  border-left:1em solid #ccc;
+  padding:1em;
+  }
+.hiddenStructure {
+  background:none;
+  border:0;
+  display:block;
+  height:0.1em;
+  margin:-0.1em 0 0 -0.1em;
+  overflow:hidden;
+  padding:0;
+  position:absolute;
+  width:1px;
+  }
+.visualClear {
+  clear:both;
+  }
+
+/*
+ * TinyMCE Styles
+ */
+.mceContentBody a {
+  border: 0 !important;
+  color: $mainColor !important;
+  }
+  
+/* Image alignment classes */
+.image-left {
+  clear:left;
+  float:left;
+  margin:0.5em 1em 0.5em 0;
+  }
+.image-right {
+  clear:right;
+  float:right;
+  margin:0.5em 0 0.5em 1em;
+  }
+.image-inline {
+  float:none;
+  }
+.image-caption {
+  margin:0; 
+  }
+.newsImageContainer {
+  float:right;
+  margin:0 0 0.5em 1em;
+  }
+.newsImage {
+  
+  }
+img.tileImage {
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+  }
+
+/*----- General -----*/
+#portal-top {
+  background: url(../images/pat.png);
+  border-bottom: 1px solid #5ec3bf;
+  box-shadow: 0 5px 24px rgba(0, 106, 107, 0.21);
+  min-width: 960px;
+  }
+#portal-header-wrapper {
+  margin: auto;
+  position: relative;
+  width: 960px;
+  }
+#portal-header {
+  padding: 0 0 33px;  
+}
+#portal-header:before {
+  border: 7px solid rgb(0, 161, 154);
+  border: 7px solid rgba(0, 161, 154, 0.75);
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 1px rgba(0, 161, 154, 0.9);
+  content: "";
+  display: block;
+  margin: -9px 0 0;
+}
+#portal-columns-wrapper {
+  margin: auto;
+  width: 960px;
+  }
+#portal-columns {
+  margin: 0 0 1.5em;
+  }
+#portal-column-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 24px;
+  }
+#portal-column-content.position-1\3a 4 {
+  padding-left: 24px;  
+  }
+#portal-column-one,
+#portal-column-two {
+  margin-top: 1.55em;
+  }
+
+/*
+ * Search Page
+ */
+#search-field {
+  border: 0;
+}
+.searchPage[type="text"] {
+  border: 1px solid #8cc8be;
+  border: 1px solid rgba(4, 129, 98, 0.25);
+  border-radius: 19px;
+  padding: 5px 10px;
+}
+.searchPage[type="text"]:focus {
+  outline: none;
+}
+#search-results-bar a {
+  color: #00a19a;
+}
+#search-results-bar dd {
+  background-color: #c0c0c0;
+}

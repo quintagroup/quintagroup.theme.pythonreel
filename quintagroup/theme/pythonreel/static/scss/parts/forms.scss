@@ -1,0 +1,39 @@
+/* ==========================================================================
+     Forms
+     ========================================================================== */
+button,
+input,
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  vertical-align: baseline;
+  }
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 3px;
+  }
+.label,
+label {
+  font-weight: bold;
+  }
+.field {
+  margin: 0 0 1em;
+  }
+div.field.error {
+  background-color: #fdc;
+  border: 1px solid red;
+  padding: 0.5em;
+  }
+.formControls {
+  margin: 1em 0;
+  }
+.formControls input {
+  margin-right: 4px;
+  }
+.context,
+.standalone,
+.destructive {
+  margin-right: 4px;
+  }

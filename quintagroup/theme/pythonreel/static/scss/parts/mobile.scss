@@ -1,0 +1,123 @@
+/* ==========================================================================
+     Mobile styles
+     ========================================================================== */
+div.row {
+  float: none;
+  width: auto;
+  }
+div.cell {
+  float: none;
+  left: auto;
+  margin: 0 !important;
+  width: auto !important;
+  }
+#portal-top {
+  min-width: 0;
+  }
+#portal-header {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#portal-header-wrapper,
+#portal-columns-wrapper,
+#portal-bottom {
+  margin: 0;
+  width: auto;
+}
+#portal-personaltools {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#portal-searchbox {
+  clear: none;
+  margin: 7px 0 15px;
+  position: relative;
+  z-index: 4;
+}
+#theme-globalnav {
+  clear: both;
+  margin: 0 0 15px;
+}
+#theme-globalnav > li > a {
+  margin-right: 10px;
+  padding: 0;
+}
+#theme-globalnav > li:hover > .hasChildrens {
+  background: none;
+}
+#theme-globalnav ul {
+  display: none !important;
+}
+#theme-globalnav.mobileMenuOn {
+  display:none;
+}
+#portal-globalnav-mobile {
+  display:block;
+  margin: 0 0 15px;
+} 
+#portal-logo {
+  margin: 0 0 15px;
+  max-width: 100%;
+}
+#portal-logo img {
+  max-width: 100%;
+}
+#slogan {
+  max-width: none;
+}
+#portal-path {
+  margin: 0 10px;
+  width: auto;
+}
+#portal-column-content,
+#portal-column-one,
+#portal-column-two {
+  padding: 0 10px !important;
+}
+#portal-footer,
+#portal-colophon {
+  padding-left: 10px;
+}
+.carousel-banners,
+.carousel-slider,
+.carousel-banner {
+  max-width: 100%;
+  }
+.carousel-image img {
+  height: auto;
+  width: auto;
+  }
+#top-carousel .carousel-text {
+  bottom: 0;
+  height: 33px;
+  left: 10px;
+  overflow: hidden;
+  padding: 0;
+  top: auto;
+  right: 45px;
+}
+#top-carousel .carousel-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#top-carousel .carousel-body {
+  display: none;
+}
+#top-carousel .carousel-pager {
+  left: auto;
+  right: 0;
+}
+#portlets-in-header,
+#portlets-footer {
+  margin: 0 10px;
+}
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+  margin-right:0;
+  width:100%;
+  }

@@ -101,8 +101,6 @@ Features
     Clean and professional fully responsive Mega Menu solution for Plone. This product allows Plone website to display panel added to portal top as drop-down menu for navigation tabs.
 
 
-
-
 Installation
 ============
 

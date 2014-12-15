@@ -1,0 +1,127 @@
+/* ==========================================================================
+     Print styles
+     ========================================================================== */
+body {
+  font-family:"Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+  font-size:11pt;
+  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+  line-height:125%;
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  }
+a {
+  border-bottom:0.5pt solid #000;
+  color:#000;
+  text-decoration:none;
+  }
+.documentDescription {
+  font-weight:bold;
+  }
+pre {
+  border:1pt dotted #000;
+  font-size:8pt;
+  overflow:auto;
+  padding:1em;
+  white-space:pre;
+  }
+table.listing,
+table.listing td {
+  border:1pt solid #000;
+  border-collapse:collapse;
+  }
+table.listing td,
+table.listing th {
+  padding:6px;
+  }
+div.pageBreak {
+  page-break-before:always;
+  }
+#content dt {
+  margin:1em 0 0.625em;
+  }
+#content p, #content table {
+  margin-bottom:0.625em;
+  margin-top:0.625em;
+  }
+#content .documentDescription, #content #description {
+  margin:0.5em 0 1.31em;
+  }
+div.top,
+#portal-logo,
+#portal-siteactions,
+.hiddenStructure,
+#portal-searchbox,
+#theme-globalnav,
+#portal-globalnav-mobile,
+#portal-personaltools,
+#portal-breadcrumbs,
+#edit-bar,
+.carousel,
+#portlets-in-header,
+#portal-column-one,
+#portlets-above,
+#portlets-below,
+#portal-column-two,
+#portlets-footer,
+#portal-languageselector,
+.contentViews,
+.contentActions,
+.help,
+.legend,
+.portalMessage,
+.documentActions,
+.netscape4,
+#viewlet-below-content .reply,
+#viewlet-below-content .discussion,
+#portal-footer,
+#portal-colophon,
+.skipnav,
+#ajax-spinner,
+#review-history,
+#content-history,
+.listingBar,
+.link-presentation,
+input.standalone,
+.overlay,
+.managePortletsFallback,
+.close,
+.link-parent,
+.draggingHook,
+#foldercontents-order-column,
+input.context,
+.visualNoPrint,
+.slinks {
+  display:none;
+  }
+.image-left {
+  clear:left;
+  float:left;
+  margin:0.5em 1em 0.5em 0;
+  }
+.image-inline {
+  float:none;
+  }
+.image-right {
+  clear:right;
+  float:right;
+  margin:0.5em;
+  }
+dd.image-caption {
+  margin:0;
+  padding:0;
+  text-align:left;
+  }
+dl.captioned {
+  padding:0.8em;
+  }
+.newsImageContainer {
+  float:right;
+  margin:0 0 0.5em 1em;
+  width:16em;
+  }
+.tileImage {
+  float:right;
+  margin:0 0 0.5em 0.5em;
+  }

@@ -1,0 +1,97 @@
+/* ==========================================================================
+     Grid
+     ========================================================================== */
+/* The 16-column Deco Grid System for fixed width of 960px:
+ * Cells are 45.0px (4.6875%), margin will be 16px (1.66666666667%).
+ * Portal left/right margin is 0dpx (0.0%).
+ */
+
+div.row {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+div.cell {
+  position: relative;
+  float: left;
+  left: 100%;
+}
+
+/* Width classes */
+
+div.width-1 { width: 4.6875%; }
+div.width-2 { width: 11.0417%; }
+div.width-3 { width: 17.3958%; }
+div.width-4 { width: 23.7500%; }
+div.width-5 { width: 30.1042%; }
+div.width-6 { width: 36.4583%; }
+div.width-7 { width: 42.8125%; }
+div.width-8 { width: 49.1667%; }
+div.width-9 { width: 55.5208%; }
+div.width-10 { width: 61.8750%; }
+div.width-11 { width: 68.2292%; }
+div.width-12 { width: 74.5833%; }
+div.width-13 { width: 80.9375%; }
+div.width-14 { width: 87.2917%; }
+div.width-15 { width: 93.6458%; }
+div.width-16 { width: 100.0000%; }
+
+/* Positioning classes, these are subtracting from a rightmost position,
+ * which is why they seem the wrong way around */
+
+div.position-0 { margin-left: -100.0000%; }
+div.position-1 { margin-left: -93.6458%; }
+div.position-2 { margin-left: -87.2917%; }
+div.position-3 { margin-left: -80.9375%; }
+div.position-4 { margin-left: -74.5833%; }
+div.position-5 { margin-left: -68.2292%; }
+div.position-6 { margin-left: -61.8750%; }
+div.position-7 { margin-left: -55.5208%; }
+div.position-8 { margin-left: -49.1667%; }
+div.position-9 { margin-left: -42.8125%; }
+div.position-10 { margin-left: -36.4583%; }
+div.position-11 { margin-left: -30.1042%; }
+div.position-12 { margin-left: -23.7500%; }
+div.position-13 { margin-left: -17.3958%; }
+div.position-14 { margin-left: -11.0417%; }
+div.position-15 { margin-left: -4.6875%; }
+
+/* Convenience classes. Not strictly necessary. */
+div.width-full { width: 100.0000% }
+div.position-0 { margin-left: -100.0000% }
+
+div.width-1\3a 2 { width: 49.1667% }
+div.position-1\3a 2 { margin-left: -49.1667% }
+
+div.width-1\3a 3 { width: 32.2222% }
+div.width-2\3a 3 { width: 66.1111% }
+div.position-1\3a 3 { margin-left: -66.1111% }
+div.position-2\3a 3 { margin-left: -32.2222% }
+
+div.width-1\3a 4 { width: 23.7500% }
+div.width-2\3a 4 { width: 49.1667% }
+div.width-3\3a 4 { width: 74.5833% }
+div.position-1\3a 4 { margin-left: -74.5833% }
+div.position-2\3a 4 { margin-left: -49.1667% }
+div.position-3\3a 4 { margin-left: -23.7500% }
+
+div.width-1\3a 5 { width: 18.6667% }
+div.width-2\3a 5 { width: 39.0000% }
+div.width-3\3a 5 { width: 59.3333% }
+div.width-4\3a 5 { width: 79.6667% }
+div.position-1\3a 5 { margin-left: -79.6667% }
+div.position-2\3a 5 { margin-left: -59.3333% }
+div.position-3\3a 5 { margin-left: -39.0000% }
+div.position-4\3a 5 { margin-left: -18.6667% }
+
+div.width-1\3a 6 { width: 15.2778% }
+div.width-2\3a 6 { width: 32.2222% }
+div.width-3\3a 6 { width: 49.1667% }
+div.width-4\3a 6 { width: 66.1111% }
+div.width-5\3a 6 { width: 83.0556% }
+div.position-1\3a 6 { margin-left: -83.0556% }
+div.position-2\3a 6 { margin-left: -66.1111% }
+div.position-3\3a 6 { margin-left: -49.1667% }
+div.position-4\3a 6 { margin-left: -32.2222% }
+div.position-5\3a 6 { margin-left: -15.2778% }

@@ -1,0 +1,217 @@
+/* ==========================================================================
+     Portlets
+     ========================================================================== */
+/*
+ * General Portlets Styles
+ */
+.portlet {
+  margin:0 0 2em;  
+  }
+dt.portletHeader {
+  font-family: yorkvilleregular,sans-serif;
+  font-size: 2.31em;
+  font-weight: normal;
+  text-transform: lowercase;
+  }
+.portletItem {
+  font-size: 0.93em;
+  line-height: 1.33em;
+  margin: 0;
+  padding: 1.1em 0 0.3em;
+  }
+.portletFooter {
+  margin: 0;
+  padding: 1.1em 0 0.3em;
+  }
+.tile {
+  display: block;
+  }
+.portletItemDetails {
+  font-size: 0.83em;
+  display: block;
+  }
+
+/*
+ * Manage Portlets
+ */
+.managedPortlet {
+  margin: 10px 0;
+  }
+.managePortletsLink {
+  text-align:center;
+  }
+.managePortletsFallback {
+  display: block;
+  text-align: center;
+  }
+.managedPortletActions {
+  float: right;
+  }
+div.portletAssignments .managedPortletActions form {
+  display:inline;
+  }
+div.portletAssignments .managedPortletActions a,
+div.portletAssignments .managedPortletActions button {
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  }
+  
+/*
+ * Portlet Navigation
+ */
+.navTree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+.portletNavigationTree a {
+  display: block;
+  }
+.portletNavigationTree a:visited {
+  color: #00a19a;
+  }
+.portletNavigationTree a:hover {
+  color: $secondaryColor;
+  }
+.navTreeLevel0 {
+  font-size: 1.5em;
+  line-height: 1.33em;
+  text-transform: lowercase;
+  }
+.navTreeLevel0 > .navTreeItem {
+  margin: 0 0 0.6em;
+  }
+.navTreeLevel1 {
+  font-size: 0.78em;
+  line-height: 1em;
+  margin: 9px 0 9px 18px;
+  text-transform: none;
+  }
+.navTreeLevel1 > .navTreeItem {
+  margin: 0 0 0.5em;
+  }
+.navTreeLevel2 {
+  font-size: 0.86em;
+  margin:10px 0 10px 20px;
+  }
+.navTreeLevel2 .navTree {
+  margin: 5px 0 6px;
+  }
+.navTreeLevel3 {
+  line-height: 1.67em;
+  }
+.navTree.navTreeLevel3 li {
+  background: url(../images/bullet.png) no-repeat scroll 2px 8px;
+  padding-left: 13px;
+  }
+.navTree.navTreeLevel3 li:hover {
+  background-position: 2px -96px;
+  }
+
+
+/*
+ * Portlet Search 
+ */
+.portletSearch .LSBox {
+  border-width: 1px;
+  display: inline-block;
+}
+.portletSearch .searchField {
+  background-color: transparent;
+  border: 0;
+  color: #3fb7b2;
+  font-size: 1.08em;
+  text-transform: lowercase;
+  width: 188px;
+  }
+.portletSearch .searchField:focus {
+  outline: none;
+  }
+.portletSearch .searchField::-webkit-input-placeholder {
+  color: #3fb7b2;
+  }
+
+/*
+ * Portlet Static Text
+ */
+div.portletStaticText {
+  margin: 0 0 2em;
+  }
+.portletStaticText .portletItem {
+  padding: 0;
+  }
+
+/*
+ * Portlet Calendar
+ */
+.portletCalendar dt.portletHeader {
+  font-size: 1.65em;
+  text-transform: uppercase;
+}
+.ploneCalendar {
+  width: 100%;
+  } 
+.ploneCalendar th {
+  text-align: center;
+  }
+.ploneCalendar td {
+  font-size: 0.83em;
+  line-height: 1em;
+  padding: 20px 2px 0;
+  text-align: center;
+  vertical-align: baseline;
+  width: 14%;
+  }
+.ploneCalendar td a {
+  display: inline-block;
+  }
+.ploneCalendar .event,
+.ploneCalendar .todayevent {
+  border-bottom: 1px solid $mainColor;
+  }
+.ploneCalendar .event:hover,
+.ploneCalendar .todayevent:hover {
+  border-color: $secondaryColor;
+  }
+.ploneCalendar .event:hover a,
+.ploneCalendar .todayevent:hover a {
+  color: $secondaryColor;
+  }
+.ploneCalendar .todayevent,
+.ploneCalendar .todaynoevent {
+  font-family: yorkvilleregular,sans-serif;
+  font-size: 1.67em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding-top: 13px;
+  }
+#calendar-previous {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAMAAAAcTszfAAAAMFBMVEUAoZoAoZoAoZoAoZoAlpAAoZoAoZoAoZoAl5EAoZoAmZIAoZoAAAAAmpMAmJEAoZp+2LSiAAAADXRSTlOQGH4M+HUGNulL22MAm+lOJwAAAC1JREFUeNodx8kRACAMw0BzBohJ+u8WD/rsCFQFYo4b4F6ZAU+ls/MhvQvV6gMr4wHNVz1NRQAAAABJRU5ErkJggg==) 50% 50% no-repeat;
+  display: inline-block;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+  @include hide-text;
+}
+#calendar-next {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAMAAAAcTszfAAAAMFBMVEUAoZoAoZoAoZoAoZoAlpAAoZoAoZoAoZoAl5EAoZoAmZIAoZoAAAAAmpMAmJEAoZp+2LSiAAAADXRSTlOQGH4M+HUGNulL22MAm+lOJwAAACxJREFUeNodikkSACAMwnCtWrX//61gLhkmIJdNcKt/RSyTiEtjcp3W2ZD0fCyLAc17G1hSAAAAAElFTkSuQmCC) 50% 50% no-repeat;
+  display: inline-block;
+  height: 15px;
+  vertical-align: middle;
+  width: 15px;
+  @include hide-text;
+}
+
+/*
+ * Login Portlet
+ */
+.portletLogin input[type="text"],
+.portletLogin input[type="password"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
+}
