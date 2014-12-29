@@ -131,7 +131,12 @@
     <before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
         <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
         <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" css:if-content="#portal-globalnav-mobile"/>
-        <after css:theme="#portal-path" css:content="#portal-top .panels" css:if-content="#nav" if-path="@@manage-panels"/> 
+
+        <after css:theme="#portal-path" css:content="#portal-top .panels" />
+        <copy attributes="class"  css:theme="#theme-globalnav" css:content="#portal-globalnav" />
+        <drop css:content="#portal-top .panels .panel-0" css:if-content="#nav" if-not-path="@@manage-panels"/>
+
+
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
         <drop css:content="#portal-breadcrumbs" /> 
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw"/>

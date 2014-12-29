@@ -2134,9 +2134,19 @@ div.cell {
     width: auto !important;
     clear: both;
     }
+#visual-portal-wrapper > .panels div.cell {
+  left:0;
+  width: 100% !important;
+  }
+#visual-portal-wrapper > .panels {
+    width: 100%;
+    }
 #portal-top {
     min-width: 0;
 }
+#portal-columns {
+    clear: both;
+    }
 #portal-header:before {
     margin-left: 10px;
     margin-right: 10px;

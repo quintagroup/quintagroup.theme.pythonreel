@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5 December 29, 2014
+
+- Fixed rules ffor panels in portal-top [roman.ischiv]
+
 1.4 December 12, 2014
 
 - Added style for megamenu and slidertemplates products [roman.ischiv]
