@@ -50,10 +50,10 @@
         <!--  Header -->
         <drop css:theme="meta[http-equiv='Content-type']" />
         <drop css:content="meta[name='viewport']" />
-    <drop css:content="link[href*='reset']" />
-    <drop css:content="link[href$='forms.css']" />
-    <drop css:content="link[href$='controlpanel.css']" />
-    <drop css:content="link[href$='authoring.css']" />
+        <drop css:content="link[href*='reset']" />
+        <drop css:content="link[href$='forms.css']" />
+        <drop css:content="link[href$='controlpanel.css']" />
+        <drop css:content="link[href$='authoring.css']" />
         <drop css:content="link[href$='public.css']" />
         <drop css:content="link[href$='columns.css']" />
         <drop css:content="link[href$='portlets.css']" />
@@ -127,15 +127,42 @@
         <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
         <drop css:content="#portal-siteactions" />
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
-        <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
-    <before css:theme="#theme-globalnav" css:content="#portal-logo+p.hiddenStructure" />
-        <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
-        <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" css:if-content="#portal-globalnav-mobile"/>
+
+        <!-- Global Navigation -->
 
         <after css:theme="#portal-path" css:content="#portal-top .panels" />
-        <copy attributes="class"  css:theme="#theme-globalnav" css:content="#portal-globalnav" />
-        <drop css:content="#portal-top .panels .panel-0" css:if-content="#nav" if-not-path="@@manage-panels"/>
-
+        <rules css:if-content="#portal-megamenu">
+            <replace css:content="#portal-globalnav">
+                <xsl:copy>
+                    <xsl:copy-of select="attribute::*[not(name()='id')]" />
+                    <xsl:attribute name="id">theme-globalnav</xsl:attribute>
+                    <xsl:apply-templates />
+                </xsl:copy>
+            </replace>
+            <replace  css:theme="#theme-globalnav" css:content="#portal-megamenu"/>
+            <drop css:content="#portal-top .panels .panel-0" if-not-path="@@manage-panels" if-not="$home_page"/>
+            <drop content="//div[@id='portal-megamenu']//div[not(contains(@class, 'panel-0')) and (contains(@class, 'panel-'))]" />
+        </rules>
+        <rules css:if-not-content="#portal-megamenu">
+            <replace css:content="#portal-globalnav > li > a">
+                <xsl:element name="a">
+                    <xsl:attribute name="href"><xsl:value-of select="@href" /></xsl:attribute>
+                    <xsl:attribute name="title"><xsl:value-of select="@title" /></xsl:attribute>
+                    <xsl:attribute name="class"><xsl:value-of select="@class" /></xsl:attribute>
+                    <xsl:choose>
+                        <xsl:when test="child::span">
+                            <xsl:apply-templates select="node()"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <span><xsl:apply-templates select="node()"/></span>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:element>
+            </replace>
+            <replace css:content-children="#portal-globalnav" css:theme-children="#theme-globalnav" />
+            <merge attributes="class" css:content="#portal-globalnav" css:theme="#theme-globalnav" />
+            <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
+        </rules>
 
         <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
         <drop css:content="#portal-breadcrumbs" /> 
