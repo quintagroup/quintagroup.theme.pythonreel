@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.2 May 26, 2014
+
+- updated styles for new versions[1.3.1] of quintagroup.dropdownmenu product [roman.ischiv] 
+
 1.5.1 April 21, 2014
 
 - Fixed styles for new versions of quintagroup.slidertemplates and quintagroup.megamenu products [roman.ischiv] 
