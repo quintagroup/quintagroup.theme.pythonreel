@@ -2408,6 +2408,7 @@ h2.resp-tab-active {
 #theme-globalnav li ul.resp-tabs-list {
     display: none;
     }
+
 #theme-globalnav.mobileMenuOn,
 #top-carousel .carousel-body,
 #theme-globalnav  > ul,
@@ -2441,18 +2442,27 @@ h2.resp-tab-active {
 .megamenu .navbar-toggle:hover {
     background-color: #ff8a00;
     }
-#theme-globalnav li {
-    display: block;
+#theme-globalnav > li {
+    display: inline-block;
+    width: 49%;
+    }
+#globalnav-wrapper #theme-globalnav > li, 
+#portal-megamenu #theme-globalnav > li {
+    width: 100%;
+    display: inline-block;
     }
 #portal-header:before {
     content: none;
     }
 #theme-globalnav {
-    display: none;
     clear: both;
     padding-bottom: 15px;
     margin: 0 0 5px;
     background-color: rgba(255, 255, 255, 0.85);
+    }
+#globalnav-wrapper #theme-globalnav, 
+#portal-megamenu #theme-globalnav {
+    display: none;
     }
 #theme-globalnav > li:hover,
 #theme-globalnav > li.selected {

@@ -144,8 +144,12 @@
             <drop css:content="#portal-top .panels .panel-0" if-not-path="@@manage-panels" if-not="$home_page"/>
             <drop content="//div[@id='portal-megamenu']//div[not(contains(@class, 'panel-0')) and (contains(@class, 'panel-'))]" />
         </rules>
-        <rules css:if-not-content="#portal-megamenu">
+        <rules css:if-content="#globalnav-wrapper">
             <replace css:content="#globalnav-wrapper" css:theme="#theme-globalnav" />
+            <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
+        </rules>
+        <rules if-not-content="//*[@id='globalnav-wrapper'] or //*[@id='portal-megamenu']">
+            <replace css:content="#portal-globalnav" css:theme="#theme-globalnav" />
             <after css:theme="#theme-globalnav" css:content="#portal-globalnav-mobile" />
         </rules>
 
