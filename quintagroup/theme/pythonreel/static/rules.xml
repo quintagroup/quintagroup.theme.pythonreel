@@ -63,7 +63,6 @@
         <drop css:content="link[href$='print.css']" />
         <drop css:content="link[href$='mobile.css']" />
         <drop css:content="link[href*='base']" />
-        <drop css:content="link[href$='favicon.ico']" />
         <before content="/html/head/meta" css:theme="meta[name='viewport']" />
         <before content="/html/head/base" theme="/html/head/title" />
         <replace theme='/html/head/title' content='/html/head/title' />
