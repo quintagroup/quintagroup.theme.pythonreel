@@ -3,12 +3,6 @@ Installation
 
 quintagroup.theme.pythonreel can be installed in any of the following ways. 
 
-Installation via diazo panel
-============================
-
-* Download zip file at http://plone.org/products/pythonreel-plone-theme/releases/1.1/pythonreel.zip
-* Import the theme at the 'Diazo theme' control panel
-
 Installation via buildout
 =========================
 

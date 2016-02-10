@@ -1,6 +1,6 @@
 Python Reel Theme
 =================
-`Python Reel Theme`_ is a free fully responsive diazo theme for Plone.
+`Python Reel Theme`_ is a free fully responsive diazo theme for Plone 4.2 and 4.3.
 
 Screenshot
 ------------
@@ -104,7 +104,27 @@ Features
 Installation
 ============
 
-See docs/INSTALL.txt file for detailed installation instructions.
+In the buildout.cfg file of your instance:
+
+* Add ``quintagroup.theme.pythonreel`` to the list of eggs to install::
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        quintagroup.theme.pythonreel
+
+* Re-run buildout::
+
+    $ ./bin/buildout
+
+* Restart the Zope server::
+
+    $ ./bin/instance restart
+
+Then activate 'Python Reel Theme' in Plone (Site Setup -> Add-ons).
+
+See docs/INSTALL.rst file for more detailed installation instructions.
 
 Dependencies
 ============
@@ -136,6 +156,6 @@ Authors
 * Serhiy Valchuk
 * Olena Klos
 
-Quintagroup: http://quintagroup.com, 2013
+Quintagroup: http://quintagroup.com, 2016
 
 .. _`Python Reel Theme`: http://themes.quintagroup.com/product/python-reel
