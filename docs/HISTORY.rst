@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.5 November 09, 2016
+
+- Add identificator to theme
+
 1.5.4 August 21, 2015
 
 - Fixed diazo rules for favicons [roman.ischiv]
